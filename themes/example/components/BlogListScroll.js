@@ -45,12 +45,11 @@ export const BlogListScroll = props => {
     }
   })
 
-  return (
-    <div id='posts-wrapper' className={`w-full ${showPageCover ? 'md:pr-2' : 'md:pr-12'}} mb-12`} ref={targetRef}>
-      {postsToShow?.map(post => (
-        <BlogPostCard key={post.id} post={post} />
-      ))}
-      {/* 这里原来是显示 "没有更多了 😰" 的地方 */}
-    </div>
-  )
-}
+return (
+  <div id='posts-wrapper' className={`w-full ${showPageCover ? 'md:pr-2' : 'md:pr-12'}} mb-12`} ref={targetRef}>
+    {postsToShow?.map(post => (
+      <BlogPostCard key={post.id} post={post} />
+    ))}
+    {hasMore ? <div onClick={handleGetMore} className="w-full my-4 py-4 text-center cursor-pointer">{locale.COMMON.MORE}</div> : <div className="w-full my-4 py-4 text-center">End...</div>}
+  </div>
+)
