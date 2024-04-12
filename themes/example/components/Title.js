@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/config'
  */
 export const Title = (props) => {
   const { post } = props
-  const title = post?.title || siteConfig("Here is Li Zhongping's blog.")
+  const title = post?.title || siteConfig("TITLE")
   const description = post ? "Li ZhongPing." : "户外摄影、骑行、背包徒步、业余无线电，马督工粉丝"
 
   return (
