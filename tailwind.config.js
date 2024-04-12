@@ -36,7 +36,7 @@ module.exports = {
         },
         hexo: {
           'background-gray': '#f5f5f5',
-          'black-gray': '#101414',
+          'black-gray': 'transparent',
           'light-gray': '#e5e5e5'
         },
         // black: '#212b36',
