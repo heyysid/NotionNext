@@ -7,7 +7,6 @@ import { Nav } from './components/Nav'
 import { Footer } from './components/Footer'
 import { Title } from './components/Title'
 import { SideBar } from './components/SideBar'
-import { BlogListPage } from './components/BlogListPage'
 import { BlogListScroll } from './components/BlogListScroll'
 import { useGlobal } from '@/lib/global'
 import { ArticleLock } from './components/ArticleLock'
@@ -131,13 +130,6 @@ const LayoutIndex = props => {
  * @param {*} props
  * @returns
  */
-const LayoutPostList = props => {
-  return (
-        <>
-            {siteConfig('POST_LIST_STYLE') === 'page' ? <BlogListPage {...props} /> : <BlogListScroll {...props} />}
-        </>
-  )
-}
 
 /**
  * 文章详情页
