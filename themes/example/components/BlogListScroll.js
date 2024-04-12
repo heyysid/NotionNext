@@ -44,21 +44,15 @@ export const BlogListScroll = props => {
       window.removeEventListener('scroll', scrollTrigger)
     }
   })
-
-    return (
-  <div id='posts-wrapper' className={`w-full ${showPageCover ? 'md:pr-2' : 'md:pr-12'} mb-12`} ref={targetRef}>
-
-    {postsToShow?.map(post => (
-      <BlogPostCard key={post.id} post={post} />
-    ))}
-
-    <div 
-        onClick={handleGetMore} 
-        className="w-full my-4 py-4 text-center cursor-pointer"
-    >
-          {' '}
-      {hasMore ? locale.COMMON.MORE : 'End...'}
+  
+  return (
+    <div id='posts-wrapper' className={`w-full ${showPageCover ? 'md:pr-2' : 'md:pr-12'} mb-12`} ref={targetRef}>
+      {postsToShow?.map(post => (
+        <BlogPostCard key={post.id} post={post} />
+      ))}
+      <div onClick={handleGetMore} className="w-full my-4 py-4 text-center cursor-pointer">
+        {hasMore ? locale.COMMON.MORE : 'End...'}
+      </div>
     </div>
-
-  </div>
-)
+  )
+}
