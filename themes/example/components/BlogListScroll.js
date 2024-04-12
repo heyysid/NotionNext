@@ -45,7 +45,7 @@ export const BlogListScroll = props => {
     }
   })
 
-return (
+    return (
   <div id='posts-wrapper' className={`w-full ${showPageCover ? 'md:pr-2' : 'md:pr-12'} mb-12`} ref={targetRef}>
 
     {postsToShow?.map(post => (
