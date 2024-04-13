@@ -39,11 +39,16 @@ export const SideBar = (props) => {
                 <div className="p-4">
                     <ul className="list-reset leading-normal">
                         {latestPosts?.map(p => {
-                          return (
-                              <Link key={p.id} href={`/${p.slug}`} passHref legacyBehavior>
-                                    <li>  <a href={`/${p.slug}`} className="text-gray-darkest text-sm">{p.title}</a></li>
-                                </Link>
-                          )
+                            return (
+                                <div key={p.id}> {/* 添加一个 div 元素包裹 Link 和 hr 元素 */}
+                                    <Link key={p.id} href={`/${p.slug}`} passHref legacyBehavior>
+                                        <li>
+                                            <a href={`/${p.slug}`} className="text-gray-darkest text-sm">{p.title}</a>
+                                        </li>
+                                    </Link>
+                                    <hr className="mt-2 border-gray-300 dark:border-gray-600"/> {/* 下划线 */}
+                                </div>
+                            )
                         })}
                     </ul>
                 </div>
