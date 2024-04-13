@@ -26,12 +26,14 @@ export const Nav = (props) => {
   if (!links || links.length === 0) {
     return null;
   }
-
-return (
-    <nav className="w-full bg-white dark:border-hexo-black-gray dark:bg-black">
-      <div className="md:flex text-sm md:text-md">
-           <ul className="flex top-0 left-0 md:flex md:justify-end md:items-start md:absolute md:top-0 md:right-0">
-          {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
+  
+  return (
+    <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
+      <div className="container mx-auto max-w-4xl md:flex justify-between items-center text-sm md:text-md md:justify-start">
+        <ul className="w-full text-center md:text-left flex flex-wrap justify-center items-stretch md:justify-start md:items-start">
+          {links.map((link, index) => (
+            <MenuItemDrop key={index} link={link} />
+          ))}
         </ul>
       </div>
     </nav>
