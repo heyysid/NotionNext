@@ -37,11 +37,11 @@ export const Nav = (props) => {
         </ul>
 
         {/* 移动端布局 */}
-        <ul className="md:hidden flex justify-start items-center" style={{ flexWrap: 'nowrap' }}>
+        <ul className="md:hidden flex justify-start items-center top-0 left-0 flex-shrink-1">
           {links.map((link, index) => (
-            <MenuItemDrop key={index} link={link} style={{ flexGrow: 0 }} />
+            <MenuItemDrop key={index} link={link} style={{ flex: '0 1 auto' }} />
           ))}
-        </ul>
+       </ul>
       </div>
     </nav>
   )
