@@ -52,7 +52,7 @@ return (
       </ul>
 
       {/* 移动端布局 */}
-      <ul className="flex absolute top-0 left-0 md:hidden">
+      <ul className="flex top-0 left-0 md:hidden">
         {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
       </ul>
     </div>
