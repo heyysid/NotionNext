@@ -26,13 +26,17 @@ export const Nav = (props) => {
   if (!links || links.length === 0) {
     return null;
   }
-  
+
 return (
     <nav className="w-full bg-white dark:border-hexo-black-gray dark:bg-black">
-      <div className="container mx-auto max-w-4xl md:justify-end items-center text-sm md:text-md md:justify-end md:items-start absolute top-0 right-0">
-        <ul className="w-full text-center md:text-left flex flex-wrap justify-center items-stretch md:justify-end md:items-start">
+      <div className="md:flex text-sm md:text-md">
+         <ul className="hidden md:flex md:justify-end md:items-start absolute top-0 right-0">
           {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
+        {/* <div className="w-full md:w-1/3 text-center md:text-right"> */}
+            {/* <!-- extra links --> */}
+        {/* </div> */}
+
         <ul className="flex top-0 left-0 md:hidden">
           {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
