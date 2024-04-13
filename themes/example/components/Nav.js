@@ -36,6 +36,9 @@ return (
         {/* <div className="w-full md:w-1/3 text-center md:text-right"> */}
             {/* <!-- extra links --> */}
         {/* </div> */}
+        <ul className="flex top-0 left-0 md:hidden">
+          {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
+        </ul>
       </div>
     </nav>
   )
