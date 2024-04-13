@@ -30,15 +30,25 @@ export const Nav = (props) => {
 
   if (!links || links.length === 0) {
     return null
-  }
+ }
+  
+return (
+  <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
+    <div className="container mx-auto max-w-4xl md:flex justify-between items-center text-sm md:text-md">
+      {/* 电脑端布局 */}
+      <ul className="hidden md:flex md:justify-end md:items-start">
+        {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
+      </ul>
 
-  return (
-    <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
-      <div className="container mx-auto max-w-4xl md:justify-end items-center text-sm md:text-md md:justify-end md:items-start absolute top-0 right-0">
-        <ul className="w-full text-center md:text-left flex flex-wrap justify-center items-stretch md:justify-end md:items-start">
-          {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
-        </ul>
+      {/* 移动端布局 */}
+      <div className="md:hidden flex justify-end items-center">
+        <button className="text-gray-dark hover:text-gray-900 focus:outline-none">
+          <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
       </div>
-    </nav>
+    </div>
+  </nav>
   )
-}
+ }
