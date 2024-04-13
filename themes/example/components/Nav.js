@@ -36,11 +36,13 @@ export const Nav = (props) => {
           {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
 
-      {/* 移动端布局 */}
-      <ul className="md:hidden flex justify-start items-center flex-wrap" style={{ flexWrap: 'nowrap' }}>
-        {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
-      </ul>
-    </div>
-  </nav>
+        {/* 移动端布局 */}
+        <ul className="md:hidden flex justify-start items-center flex-wrap" style={{ flexWrap: 'nowrap' }}>
+          {links.map((link, index) => (
+            <MenuItemDrop key={index} link={link} style={{ flexGrow: 0 }} />
+          ))}
+        </ul>
+      </div>
+    </nav>
   )
- }
+}
