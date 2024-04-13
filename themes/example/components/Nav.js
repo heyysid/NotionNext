@@ -1,4 +1,3 @@
-import React from 'react';
 import { siteConfig } from '@/lib/config';
 import { useGlobal } from '@/lib/global';
 import CONFIG from '../config';
@@ -37,11 +36,11 @@ export const Nav = (props) => {
         </ul>
 
         {/* 移动端布局 */}
-        <ul className="md:hidden flex justify-start items-center top-0 left-0 flex-shrink-1">
+        <ul className="md:hidden justify-start items-center top-0 left-0 flex-shrink-0 overflow-x-auto">
           {links.map((link, index) => (
             <MenuItemDrop key={index} link={link} style={{ flex: '0 1 auto' }} />
           ))}
-       </ul>
+        </ul>
       </div>
     </nav>
   )
