@@ -31,11 +31,7 @@ return (
     <nav className="w-full bg-white dark:border-hexo-black-gray dark:bg-black">
       <div className="md:flex text-sm md:text-md">
             {/* 电脑端布局，绝对定位在顶部最右侧 */}
-         <ul className="hidden md:flex md:justify-end md:items-start absolute top-0 right-0">
-          {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
-        </ul>
-            {/* 移动端布局，菜单按钮 */}
-        <ul className="flex top-0 left-0 md:hidden">
+         <ul className="flex top-0 left-0 md:flex md:justify-end md:items-start absolute top-0 right-0">
           {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
       </div>
