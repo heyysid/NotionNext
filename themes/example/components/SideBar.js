@@ -47,10 +47,8 @@ export const SideBar = (props) => {
       </aside>
 
       <aside className='rounded shadow overflow-hidden mb-6'>
-        <div className="w-full flex">
          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">社交媒体覆盖</h3>
-        </div>
-        <div className='justify-center space-x-3 text-xl text-gray-600 dark:text-gray-300 p-4'>
+         <div className='justify-center space-x-3 text-xl text-gray-600 dark:text-gray-300 p-4'>
           {siteConfig('CONTACT_GITHUB') && <a key="github" target='_blank' rel='noreferrer' title={'github'} href={siteConfig('CONTACT_GITHUB')}>
             <i className='transform hover:scale-125 duration-150 fab fa-github dark:hover:text-indigo-400 hover:text-indigo-600'/>
           </a>}
