@@ -47,7 +47,7 @@ export const SideBar = (props) => {
       </aside>
 
       <aside className='rounded shadow overflow-hidden mb-6'>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex">
          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b mb-6">社交媒体覆盖</h3>
         </div>
         <div className='justify-center space-x-3 text-xl text-gray-600 dark:text-gray-300 p-4'>
