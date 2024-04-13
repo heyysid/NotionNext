@@ -29,9 +29,8 @@ export const Nav = (props) => {
   
 return (
     <nav className="w-full bg-white dark:border-hexo-black-gray dark:bg-black">
-      <div className="md:flex text-sm md:text-md">
-        {/* 电脑端布局，绝对定位在顶部最右侧 */}
-        <ul className="md:flex md:justify-end md:items-start absolute top-0 right-0 hidden ">
+      <div className="container mx-auto max-w-4xl md:justify-end items-center text-sm md:text-md md:justify-end md:items-start absolute top-0 right-0">
+        <ul className="w-full text-center md:text-left flex flex-wrap justify-center items-stretch md:justify-end md:items-start">
           {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
         <ul className="flex top-0 left-0 md:hidden">
