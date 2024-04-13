@@ -6,7 +6,7 @@ import Link from 'next/link'
  */
 export const Header = (props) => {
   return (
-    <header className="w-full flex justify-end px-6 bg-white dark:bg-black relative z-10 h-0">
+    <header className="w-full flex justify-end px-6 bg-white dark:bg-black relative top-0 z-0 h-0 hidden">
       <div className="container mx-auto max-w-4xl md:flex justify-between items-center">
         <Link href='/' className="py-6 w-full text-center md:text-left md:w-auto text-gray-dark no-underline flex justify-center items-center">
           {/* 空的文本，不显示任何字符 */}
