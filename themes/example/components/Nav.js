@@ -37,7 +37,7 @@ export const Nav = (props) => {
 
         {/* 移动端布局 */}
         <ul className="md:hidden flex top-0 left-0">
-          {links.map((link, index) => (<MenuItemDrop key={index} link={link} />)}
+          {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
       </div>
     </nav>
