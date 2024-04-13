@@ -28,8 +28,8 @@ export const Nav = (props) => {
   }
   
   return (
-    <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
-      <div className="container mx-auto max-w-4xl md:flex justify-between items-center text-sm md:text-md">
+    <nav className="w-full bg-white dark:border-hexo-black-gray dark:bg-black">
+      <div className="md:flex text-sm md:text-md">
         {/* 电脑端布局，绝对定位在顶部最右侧 */}
         <ul className="hidden md:flex md:justify-end md:items-start absolute top-0 right-0">
           {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
