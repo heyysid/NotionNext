@@ -30,7 +30,7 @@ export const Nav = (props) => {
   return (
     <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
       <div className="container mx-auto max-w-4xl md:flex text-sm md:text-md">
-        <ul className="flex absolute top-0 right-0 text-sm md:flex md:absolute md:top-0 md:right-0">
+        <ul className="sm:flex sm:absolute sm:top-0 sm:right-0 sm:text-sm sm:margin-bottom-20 md:flex md:absolute md:top-0 md:right-0">
           {links.map((link, index) => (
             <MenuItemDrop key={index} link={link} />
           ))}
