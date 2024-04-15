@@ -13,7 +13,7 @@ export const MenuItemDrop = ({ link }) => {
       onMouseOver={() => changeShow(true)}
       onMouseOut={() => changeShow(false)}>
       {!hasSubMenu && (
-        <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light text-xs md:text-base'>
+        <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light'>
           <Link href={link?.to} target={link?.target}>
             {link?.icon && <i className={link?.icon} />} {link?.name}
             {hasSubMenu && <i className='px-1 fa fa-angle-down'></i>}
@@ -23,7 +23,7 @@ export const MenuItemDrop = ({ link }) => {
 
       {/* 这是在有子菜单时的样式 */}
       {hasSubMenu && (
-        <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light text-xs md:text-base'>
+        <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light'>
           {link?.icon && <i className={link?.icon} />} {link?.name}
           <i
             className={`px-1 fas fa-chevron-down duration-500 transition-all ${show ? ' rotate-180' : ''}`}></i>
@@ -40,7 +40,7 @@ export const MenuItemDrop = ({ link }) => {
                 key={index}
                 className='not:last-child:border-b-0 border-b text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
                 <Link href={sLink.to} target={link?.target}>
-                  <span className='text-sm text-nowrap font-extralight'>
+                  <span className='text-sm nowrap font-extralight'>
                     {link?.icon && <i className={sLink?.icon}> &nbsp; </i>}
                     {sLink.title}
                   </span>
