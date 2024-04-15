@@ -7,6 +7,8 @@ export const Nav = (props) => {
   const { customNav, customMenu } = props;
   const { locale } = useGlobal();
 
+  //定义导航栏图标和文本与字符，自动化从notion导入菜单
+  
   let links = [
     { id: 1, icon: 'fas fa-search', name: locale.NAV.SEARCH, to: '/search', show: siteConfig('EXAMPLE_MENU_SEARCH', null, CONFIG) },
     { id: 2, icon: 'fas fa-archive', name: locale.NAV.ARCHIVE, to: '/archive', show: siteConfig('EXAMPLE_MENU_ARCHIVE', null, CONFIG) },
@@ -27,6 +29,8 @@ export const Nav = (props) => {
   if (!links || links.length === 0) {
     return null;
   }
+
+  //定义导航栏菜单组件内部布局，子元素在MenuItemDrop.js里
   
   return (
     <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
