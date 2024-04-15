@@ -9,7 +9,7 @@ export const MenuItemDrop = ({ link }) => {
   // 这是在没有子菜单时的样式
   return (
     <li
-      className={`cursor-pointer text-xs md:text-base`}
+      className={`cursor-pointer`}
       onMouseOver={() => changeShow(true)}
       onMouseOut={() => changeShow(false)}>
       {!hasSubMenu && (
