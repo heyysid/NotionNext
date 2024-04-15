@@ -35,9 +35,9 @@ export const MenuItemDrop = ({ link }) => {
             return (
               <li
                 key={index}
-                className='not:last-child:border-b-0 border-b text-gray-700 dark:text-gray-200 text-nowrap hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
+                className='not:last-child:border-b-0 border-b text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
                 <Link href={sLink.to} target={link?.target}>
-                  <span className='text-xs sm:text-sm text-nowrap font-extralight'>
+                  <span className='text-xs text-nowrap sm:text-sm font-extralight'>
                     {link?.icon && <i className={sLink?.icon}> &nbsp; </i>}
                     {sLink.title}
                   </span>
