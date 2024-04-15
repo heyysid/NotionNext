@@ -31,15 +31,17 @@ export const Nav = (props) => {
   }
 
   //定义导航栏菜单组件内部布局，子元素在MenuItemDrop.js里
-  
+
   return (
     <nav className="w-full bg-white md:pt-0 px-6 relative z-20 border-t border-b border-gray-light dark:border-hexo-black-gray dark:bg-black">
-      <div className="container mx-auto max-w-4xl md:flex text-xs md:text-md">
-        <ul className="flex text-xs absolute top-1 right-2 md:text-md">
-          {links.map((link, index) => (
-            <MenuItemDrop key={index} link={link} />
-          ))}
+      <div className="container mx-auto max-w-4xl md:flex text-sm md:text-md justify-between items-center md:justify-start">
+        <ul className="w-full flex flex-nowrap text-center md:text-left absolute top-1 right-2 sm:left-2 md:right-0">
+        
+          {links.map((link, index) => <MenuItemDrop key={index} link={link} />)}
         </ul>
+         {/* <div className="w-full md:w-1/3 text-center md:text-right"> */}
+            {/* <!-- extra links --> */}
+         {/* </div> */}
       </div>
     </nav>
   )
