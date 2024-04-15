@@ -8,7 +8,7 @@ export const MenuItemDrop = ({ link }) => {
 
   useEffect(() => {
     function handleResize() {
-      setIsMobile(window.innerWidth <= 1200) // 根据需要调整阈值
+      setIsMobile(window.innerWidth <= 768) // 根据需要调整阈值
     }
     handleResize()
     window.addEventListener('resize', handleResize)
