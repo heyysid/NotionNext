@@ -3,10 +3,6 @@ import { useGlobal } from '@/lib/global';
 import CONFIG from '../config';
 import { MenuItemDrop } from './MenuItemDrop';
 
-.no-wrap {
-  white-space: nowrap;
-}
-
 export const Nav = (props) => {
   const { customNav, customMenu } = props;
   const { locale } = useGlobal();
