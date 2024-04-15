@@ -5,10 +5,6 @@ export const MenuItemDrop = ({ link }) => {
   const [show, changeShow] = useState(false)
   const hasSubMenu = link?.subMenus?.length > 0
 
-.no-wrap {
-  white-space: nowrap;
-};
-
   // 这是首页导航栏的菜单按钮，父元素在nav.js中
   // 这是在没有子菜单时的样式
   return (
