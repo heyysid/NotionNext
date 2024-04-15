@@ -5,11 +5,11 @@ export const MenuItemDrop = ({ link }) => {
   const [show, changeShow] = useState(false)
   const hasSubMenu = link?.subMenus?.length > 0
 
-  {//*本页定义的是首页导航栏的菜单按钮，父元素在nav.js中//}
-  {//*这是在没有子菜单时的样式//}
+  // 这是首页导航栏的菜单按钮，父元素在nav.js中
+  // 这是在没有子菜单时的样式
   return (
     <li
-      className='cursor-pointer'
+      className={`cursor-pointer text-xs md:text-base`}
       onMouseOver={() => changeShow(true)}
       onMouseOut={() => changeShow(false)}>
       {!hasSubMenu && (
@@ -21,7 +21,7 @@ export const MenuItemDrop = ({ link }) => {
         </div>
       )}
 
-  {//*这是在有子菜单时的样式//}
+      {/* 这是在有子菜单时的样式 */}
       {hasSubMenu && (
         <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light'>
           {link?.icon && <i className={link?.icon} />} {link?.name}
