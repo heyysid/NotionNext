@@ -1,13 +1,20 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export const MenuItemDrop = ({ link }) => {
   const [show, changeShow] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
   const hasSubMenu = link?.subMenus?.length > 0
 
-  // 这是首页导航栏的菜单按钮，父元素在nav.js中
-  // 这是在没有子菜单时的样式
-  return (
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 1200) // 根据需要调整阈值
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+return (
     <li
       className={`cursor-pointer`}
       onMouseOver={() => changeShow(true)}
@@ -16,7 +23,7 @@ export const MenuItemDrop = ({ link }) => {
         <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light'>
           <Link href={link?.to} target={link?.target}>
             {link?.icon && <i className={link?.icon} />} {link?.name}
-            {hasSubMenu && <i className='px-1 fa fa-angle-down'></i>} 
+            {!isMobile && hasSubMenu && <i className='px-1 fa fa-angle-down'></i>} 
           </Link>
         </div>
       )}
@@ -49,4 +56,3 @@ export const MenuItemDrop = ({ link }) => {
       )}
     </li>
   )
-}
