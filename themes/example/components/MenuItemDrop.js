@@ -5,6 +5,10 @@ export const MenuItemDrop = ({ link }) => {
   const [show, changeShow] = useState(false)
   const hasSubMenu = link?.subMenus?.length > 0
 
+.no-wrap {
+  white-space: nowrap;
+}
+
   // 这是首页导航栏的菜单按钮，父元素在nav.js中
   // 这是在没有子菜单时的样式
   return (
@@ -38,7 +42,7 @@ export const MenuItemDrop = ({ link }) => {
             return (
               <li
                 key={index}
-                className='not:last-child:border-b-0 border-b text-gray-700 dark:text-gray-200 no-wrap hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
+                className='not:last-child:border-b-0 border-b text-gray-700 no-wrap dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  dark:border-gray-800 py-3 pr-6 pl-3'>
                 <Link href={sLink.to} target={link?.target}>
                   <span className='text-sm text-nowrap font-extralight'>
                     {link?.icon && <i className={sLink?.icon}> &nbsp; </i>}
