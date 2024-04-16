@@ -4,45 +4,27 @@ import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
-
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 
 export const SideBar = (props) => {
   const { locale } = useGlobal()
   const { latestPosts, categoryOptions, notice, tagsptions } = props
-  
-  return (
-    <div className="w-full md:w-64 sticky top-8">
-      <aside className="rounded shadow overflow-hidden mb-6">
-        <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{locale.COMMON.TAGS}</h3>
-        <div className="p-4">
-          <ul className="list-reset leading-normal">
-            {tagptions?.map(tag => (
-              <li key={tag.name}>
-                <Link href={`/tag/${tag.name}`} passHref>
-                  <a className="text-gray-darkest text-sm">#{tag.name}({tag.count})</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </aside>
-            
-     <div className="w-full md:w-64 sticky top-8">
-       <aside className="rounded shadow overflow-hidden mb-6">
-         <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{locale.COMMON.CATEGORY}</h3>
-         <div className="p-4">
-           <ul className="list-reset leading-normal">
-            {categoryOptions?.map(category => (
-              <li key={category.name}>
-                <Link href={`/category/${category.name}`} passHref>
-                  <a className="text-gray-darkest text-sm">#{category.name}({category.count})</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </aside>
+  return (         
+      <div className="w-full md:w-64 sticky top-8">
+        <aside className="rounded shadow overflow-hidden mb-6">
+          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{locale.COMMON.CATEGORY}</h3>
+          <div className="p-4">
+            <ul className="list-reset leading-normal">
+             {categoryOptions?.map(category => (
+               <li key={category.name}>
+                 <Link href={`/category/${category.name}`} passHref>
+                   <a className="text-gray-darkest text-sm">#{category.name}({category.count})</a>
+                 </Link>
+               </li>
+             ))}
+           </ul>
+         </div>
+       </aside>
             
       <aside className="rounded shadow overflow-hidden mb-6">
         <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">最近更新</h3>
