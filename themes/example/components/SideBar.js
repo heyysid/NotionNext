@@ -15,7 +15,7 @@ export const SideBar = (props) => {
           <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{locale.COMMON.CATEGORY}</h3>
           <div className="p-4">
             <ul className="list-reset leading-normal">
-               <li key=>
+               <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
                    <a className="text-gray-darkest text-sm">#HDR</a>
                  </Link>
