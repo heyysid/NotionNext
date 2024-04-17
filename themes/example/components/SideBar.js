@@ -19,20 +19,28 @@ export const SideBar = (props) => {
                <li key={category.name}>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
                    <a className="text-gray-darkest text-sm">#HDR</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
                    <a className="text-gray-darkest text-sm">#背包徒步</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/python`} passHref>
                    <a className="text-gray-darkest text-sm">#编程</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/pt%2fbt`} passHref>
                    <a className="text-gray-darkest text-sm">#PT/BT</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/AI`} passHref>
                    <a className="text-gray-darkest text-sm">#AI</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/骑行`} passHref>
                    <a className="text-gray-darkest text-sm">#骑行</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/户外`} passHref>
                    <a className="text-gray-darkest text-sm">#户外</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
                    <a className="text-gray-darkest text-sm">#业余无线电</a>
+                 </Link>
                  <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
                    <a className="text-gray-darkest text-sm">#摄影</a>
                  </Link>
