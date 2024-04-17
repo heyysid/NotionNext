@@ -44,7 +44,6 @@ export const SideBar = (props) => {
                    <a className="text-gray-darkest text-sm">#摄影</a>
                  </Link>
                </li>
-             ))}
            </ul>
          </div>
        </aside>
