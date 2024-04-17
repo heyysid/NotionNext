@@ -17,31 +17,31 @@ export const SideBar = (props) => {
             <ul className="list-reset leading-normal">
                <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
-                   <a className="text-gray-darkest text-sm">#HDR</a>
+                   <a className="text-gray-darkest text-sm mr-2">#HDR</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
-                   <a className="text-gray-darkest text-sm">#背包徒步</a>
+                   <a className="text-gray-darkest text-sm mr-2">#背包徒步</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/python`} passHref>
-                   <a className="text-gray-darkest text-sm">#编程</a>
+                   <a className="text-gray-darkest text-sm mr-2">#编程</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/PT%2FBT`} passHref>
-                   <a className="text-gray-darkest text-sm">#PT/BT</a>
+                   <a className="text-gray-darkest text-sm mr-2">#PT/BT</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/AI`} passHref>
-                   <a className="text-gray-darkest text-sm">#AI</a>
+                   <a className="text-gray-darkest text-sm mr-2">#AI</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/骑行`} passHref>
-                   <a className="text-gray-darkest text-sm">#骑行</a>
+                   <a className="text-gray-darkest text-sm mr-2">#骑行</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/户外`} passHref>
-                   <a className="text-gray-darkest text-sm">#户外</a>
+                   <a className="text-gray-darkest text-sm mr-2">#户外</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
-                   <a className="text-gray-darkest text-sm">#业余无线电</a>
+                   <a className="text-gray-darkest text-sm mr-2">#业余无线电</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
-                   <a className="text-gray-darkest text-sm">#摄影</a>
+                   <a className="text-gray-darkest text-sm mr-2">#摄影</a>
                  </Link>
                </li>
            </ul>
