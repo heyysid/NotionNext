@@ -43,6 +43,18 @@ export const SideBar = (props) => {
                  <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
                    <a className="text-gray-darkest text-sm mr-4 md-4">#摄影</a>
                  </Link>
+                 <Link href={`https://lizhongping.asia/category/项目`} passHref>
+                   <a className="text-gray-darkest text-sm mr-4 md-4">#项目</a>
+                 </Link>
+                 <Link href={`https://lizhongping.asia/category/资料`} passHref>
+                   <a className="text-gray-darkest text-sm mr-4 md-4">#资料</a>
+                 </Link>
+                 <Link href={`https://lizhongping.asia/category/图片`} passHref>
+                   <a className="text-gray-darkest text-sm mr-4 md-4">#图片</a>
+                 </Link>
+                 <Link href={`https://lizhongping.asia/category/文章`} passHref>
+                   <a className="text-gray-darkest text-sm mr-4 md-4">#文章</a>
+                 </Link>
                </li>
            </ul>
          </div>
