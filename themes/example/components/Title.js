@@ -13,20 +13,20 @@ export const Title = (props) => {
   const title = post?.title || "Welcome,This is Li Zhongping's blog."
   const description = post ? "by Li ZhongPing." : (
     <React.Fragment>
-      <Link href={`https://lizhongping.asia/tag/outdoor-photography`} passHref>
-        <a className="hover:underline">⛰️户外摄影</a>
+      <Link href={`https://lizhongping.asia/category/%E5%9B%BE%E7%89%87`} passHref>
+        <a className="hover:scale-125">⛰️户外摄影</a>
       </Link>
       <span>&#160;&#160;</span>  {/* 添加空格 */}
-      <Link href={`https://lizhongping.asia/tag/cycling`} passHref>
-        <a className="hover:underline">🚴骑行</a>
+      <Link href={`https://lizhongping.asia/tag/%E9%AA%91%E8%A1%8C`} passHref>
+        <a className="hover:scale-125">🚴骑行</a>
       </Link>
       <span>&#160;&#160;</span>  {/* 添加空格 */}
-      <Link href={`https://lizhongping.asia/tag/hiking`} passHref>
-        <a className="hover:underline">⛺️背包徒步</a>
+      <Link href={`https://lizhongping.asia/tag/%E8%83%8C%E5%8C%85%E5%BE%92%E6%AD%A5`} passHref>
+        <a className="hover:scale-125">⛺️背包徒步</a>
       </Link>
       <span>&#160;&#160;</span>  {/* 添加空格 */}
-      <Link href={`https://lizhongping.asia/tag/amateur-radio`} passHref>
-        <a className="hover:underline">🛰️业余无线电</a>
+      <Link href={`https://lizhongping.asia/tag/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5`} passHref>
+        <a className="hover:scale-125">🛰️业余无线电</a>
       </Link>
     </React.Fragment>
   );
