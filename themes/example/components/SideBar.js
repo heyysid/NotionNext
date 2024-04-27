@@ -17,43 +17,43 @@ export const SideBar = (props) => {
             <ul className="list-reset leading-normal">
                <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#HDR</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#HDR</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#背包徒步</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#背包徒步</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/python`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#编程</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#编程</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/PT%2FBT`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#PT/BT</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#PT/BT</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/AI`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#AI</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#AI</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/骑行`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#骑行</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#骑行</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/户外`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#户外</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#户外</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#业余无线电</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#业余无线电</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#摄影</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#摄影</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/项目`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#项目</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#项目</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/资料`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#资料</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#资料</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/图片`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#图片</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#图片</a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/文章`} passHref>
-                   <a className="text-gray-darkest text-sm mr-4 md-4">#文章</a>
+                   <a className="text-gray-darkest hover:underline text-sm mr-4 md-4">#文章</a>
                  </Link>
                </li>
            </ul>
@@ -68,7 +68,7 @@ export const SideBar = (props) => {
               <div key={p.id}>
                 <Link href={`/${p.slug}`} passHref>
                   <li>
-                    <a className="text-gray-darkest text-sm">{p.title}</a>
+                    <a className="text-gray-darkest hover:underline text-sm">{p.title}</a>
                   </li>
                 </Link>
                 <hr className="mt-2 border-gray-300 dark:border-gray-600"/>
