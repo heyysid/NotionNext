@@ -1,5 +1,6 @@
 import NotionIcon from '@/components/NotionIcon'
 import { siteConfig } from '@/lib/config'
+import React from 'react';
 
 /**
  * 标题栏
