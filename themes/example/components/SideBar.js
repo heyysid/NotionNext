@@ -9,7 +9,7 @@ import Progress from './Progress'
 
 export const SideBar = (props) => {
   const { locale } = useGlobal()
-  const { latestPosts, categoryOptions, notice, tagsptions } = props
+  const { post, latestPosts, categoryOptions, notice, tagsptions } = props
   const description = post ? <Progress targetRef={someTargetRef} showPercent={true} /> : <SomeOtherComponent />;
 
 return (
