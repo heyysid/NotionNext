@@ -16,3 +16,5 @@ export default function TagItem({ tag }) {
         </Link>
     </div>
 }
+
+export default TagItem
