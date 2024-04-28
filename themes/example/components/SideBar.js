@@ -27,7 +27,8 @@ export const SideBar = (props) => {
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
                 <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />  {tag.name + (tag.count ? `(${tag.count})` : '')} </div></a>
                  </Link>
-
+                )}
+                  {tag && tag.name && (
                  <Link href={`/category/${category.name}`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
                 <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' /> {category.name}({category.count}) </div></a>
