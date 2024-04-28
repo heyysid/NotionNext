@@ -10,12 +10,15 @@ import Progress from './Progress'
 export const SideBar = (props) => {
   const { locale } = useGlobal()
   const { post, latestPosts, categoryOptions, notice, tagsptions } = props
-  return （
+  return (
     <div className="w-full md:w-64 sticky top-8">
         <aside className="rounded shadow overflow-hidden mb-6">
           <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{locale.COMMON.CATEGORY}</h3>
-          <div className="p-4">
-            <ul className="list-reset leading-normal">
+            <div className="p-4">
+             {post ? (
+              <Progress /> 
+              ) : (
+              <ul className="list-reset leading-normal">
                <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline text-sm mr-4 md-4">
@@ -83,7 +86,8 @@ export const SideBar = (props) => {
 
                  </Link>
                </li>
-           </ul>
+             </ul>
+           )}
          </div>
        </aside>
             
