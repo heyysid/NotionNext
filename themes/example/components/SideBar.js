@@ -17,7 +17,8 @@ export const SideBar = (props) => {
             <ul className="list-reset leading-normal">
                <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline text-sm mr-4 md-4">#HDR</a>
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline text-sm mr-4 md-4">
+              <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#HDR</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline text-sm mr-4 md-4">#背包徒步</a>
