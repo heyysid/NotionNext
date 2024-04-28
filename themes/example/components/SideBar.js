@@ -7,7 +7,7 @@ import Announcement from './Announcement'
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 import Progress from './Progress'
 import TagItem from './TagItem'
-import TagItem from './CategoryItem'
+import category from './CategoryItem'
 
 export const SideBar = (props) => {
   const { locale } = useGlobal()
