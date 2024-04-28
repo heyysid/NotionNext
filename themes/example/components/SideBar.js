@@ -6,7 +6,10 @@ import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 import Progress from './Progress'
+import TagItem from './TagItem'
 
+export default function CategoryItem({ category }) {
+export default function TagItem({ tag }) {
 export const SideBar = (props) => {
   const { locale } = useGlobal()
   const { post, latestPosts, categoryOptions, notice, tagsptions } = props
@@ -14,77 +17,20 @@ export const SideBar = (props) => {
     <div className="w-full md:w-64 sticky top-8">
         <aside className="rounded shadow overflow-hidden mb-6">
           <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{post ? "进度条" : locale.COMMON.CATEGORY}</h3>
-            <div className="p-4">
+            <div key={tag.name} className="p-4">
              {post ? (
               <Progress /> 
               ) : (
               <ul className="list-reset leading-normal">
-               <li key='1'>
-                 <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
+               <li>
+                 <Link key={tag} href={`/tag/${encodeURIComponent(tag.name)}`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#HDR</div></a>
+                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />  {tag.name + (tag.count ? `(${tag.count})` : '')} </div></a>
                  </Link>
-  
-                 <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#背包徒步</div></a>
-                 </Link>
-  
-                 <Link href={`https://lizhongping.asia/tag/python`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#python</div></a>
 
-                 </Link>
-                 <Link href={`https://lizhongping.asia/tag/PT%2FBT`} passHref>
+                 <Link key={category.name} href={`/category/${category.name}`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#PT%2FBT</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/tag/AI`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#AI</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/tag/骑行`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#骑行</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/tag/户外`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#户外</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#业余无线电</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#摄影</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/category/项目`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#项目</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/category/资料`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#资料</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/category/图片`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#图片</div></a>
-
-                 </Link>
-                 <Link href={`https://lizhongping.asia/category/文章`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline">
-                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />#文章</div></a>
-
-                 </Link>
+                <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' /> {category.name}({category.count}) </div></a>
                </li>
              </ul>
            )}
