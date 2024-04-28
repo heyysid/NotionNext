@@ -4,6 +4,8 @@ import { useGlobal } from '@/lib/global';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Announcement from './Announcement';
+import TagItem from './TagItem'
+import category from './CategoryItem'
 
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'));
 import Progress from './Progress';
