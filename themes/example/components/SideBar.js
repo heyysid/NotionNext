@@ -4,6 +4,7 @@ import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
+
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 export const SideBar = (props) => {
   const { locale } = useGlobal()
@@ -71,7 +72,8 @@ export const SideBar = (props) => {
                     <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />文章</div></a>
                  </Link>
                </li>
-              )}
+              )
+             }
            </ul>
          </div>
        </aside>
