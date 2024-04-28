@@ -13,7 +13,7 @@ export const SideBar = (props) => {
   return (         
       <div className="w-full md:w-64 sticky top-8">
         <aside className="rounded shadow overflow-hidden mb-6">
-          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">{locale.COMMON.CATEGORY}</h3>
+          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"> {post ? "进度条" : locale.COMMON.CATEGORY} </h3>
           <div className="p-4">
             {post ? (
                <Progress />
@@ -21,7 +21,7 @@ export const SideBar = (props) => {
             <ul className="list-reset leading-normal">
                <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
-                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-red_background dark:bg-gray-800 text-gray-darkest hover:underline ">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 notion-${tag.color}_background dark:bg-gray-800 text-gray-darkest hover:underline ">
               <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />HDR</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
