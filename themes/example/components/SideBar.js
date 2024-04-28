@@ -8,8 +8,6 @@ const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 import Progress from './Progress'
 import TagItem from './TagItem'
 
-export default function CategoryItem({ category }) {
-export default function TagItem({ tag }) {
 export const SideBar = (props) => {
   const { locale } = useGlobal()
   const { post, latestPosts, categoryOptions, notice, tagsptions } = props
