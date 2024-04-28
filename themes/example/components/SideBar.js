@@ -7,10 +7,11 @@ import Announcement from './Announcement'
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 import Progress from './Progress'
 import TagItem from './TagItem'
+import TagItem from './CategoryItem'
 
 export const SideBar = (props) => {
   const { locale } = useGlobal()
-  const { post, latestPosts, categoryOptions, notice, tagsptions } = props
+  const { post, latestPosts, categoryOptions, notice, tag, category, } = props
   return (
     <div className="w-full md:w-64 sticky top-8">
         <aside className="rounded shadow overflow-hidden mb-6">
