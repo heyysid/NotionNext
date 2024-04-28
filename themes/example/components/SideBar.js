@@ -55,7 +55,7 @@ const SocialLinks = () => {
 
 export const SideBar = (props) => {
   const { locale } = useGlobal();
-  const { post, tag, category } = props;
+  const { post, tag, category, tag, category, } = props;
 
   return (
     <div className="w-full md:w-64 sticky top-8">
