@@ -72,9 +72,8 @@ export const SideBar = (props) => {
                     <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />文章</div></a>
                  </Link>
                </li>
-              )
-             }
            </ul>
+           )}
          </div>
        </aside>
             
