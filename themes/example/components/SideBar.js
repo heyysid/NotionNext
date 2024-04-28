@@ -4,6 +4,7 @@ import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
+import Progress from './Progress'
 
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 export const SideBar = (props) => {
