@@ -6,13 +6,6 @@ import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
 import Progress from './Progress'
 
-import LazyImage from '@/components/LazyImage';
-import { useGlobal } from '@/lib/global';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { checkContainHttp, sliceUrlFromHttp } from '@/lib/utils';
-
-
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 export const SideBar = (props) => {
   const { locale } = useGlobal()
@@ -89,26 +82,19 @@ export const SideBar = (props) => {
         <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"><i className="mr-2 fas fas fa-history" />最近更新</h3>
         <div className="p-4">
           <ul className="list-reset leading-normal">
-                   {latestPosts?.map(post => {
-                    const headerImage = post?.pageCoverThumbnail ? post.pageCoverThumbnail : siteInfo?.pageCover;
-                    const url = checkContainHttp(post.slug) ? sliceUrlFromHttp(post.slug) : `${siteConfig('SUB_PATH', '')}/${post.slug}`;
-                    const selected = currentPath === url;
-
-                    return (
-                      <Link key={post.id} title={post.title} href={url} passHref className={'my-3 flex'}>
-                        <div className="w-20 h-14 overflow-hidden relative">
-                          <LazyImage src={`${p.Image}`} className='object-cover w-full h-full'/>
-                        </div>
-                        <div className={(selected ? 'text-indigo-400' : 'dark:text-gray-400') + ' text-sm overflow-x-hidden hover:text-indigo-600 px-2 duration-200 w-full rounded hover:text-indigo-400 cursor-pointer items-center flex'}>
-                            <div>
-                                <div className='line-clamp-2 menu-link'>{post.title}</div>
-                                <div className="text-gray-500">{post.lastEditedDay}</div>
-                         <hr className="mt-2 border-gray-300 dark:border-gray-600"/>
-                       </div>
-                     </div>
-               </Link>
-           );
-       })}
+            {latestPosts?.map(p => (
+              <div key={p.id}>
+                <Link href={`/${p.slug}`} passHref>
+                  <li>
+                    <a className="text-gray-darkest hover:underline text-sm">{p.title}</a>
+                  </li>
+                </Link>
+                <hr className="mt-2 border-gray-300 dark:border-gray-600"/>
+              </div>
+            ))}
+          </ul>
+        </div>
+      </aside>
   
       <aside className='rounded shadow overflow-hidden mb-6'>
          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">社交媒体覆盖</h3>
