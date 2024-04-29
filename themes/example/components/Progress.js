@@ -1,4 +1,4 @@
-import { useEffect, useState useRef, useCallback, } from 'react'
+import { useEffect, useState, useRef, useCallback, } from 'react'
 import { isBrowser } from '@/lib/utils'
 import throttle from 'lodash.throttle'
 import { uuidToId } from 'notion-utils'
