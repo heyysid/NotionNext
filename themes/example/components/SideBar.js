@@ -83,11 +83,16 @@ export const SideBar = (props) => {
         <div className="p-4">
           <ul className="list-reset leading-normal">
             {latestPosts?.map(p => (
-              <div key={p.id}>
+              <div key={p.id} className="mb-4 flex items-center">
                 <Link href={`/${p.slug}`} passHref>
-                  <li>
-                    <a className="text-gray-darkest hover:underline text-sm">{p.title}</a>
-                  </li>
+                 <a className="flex items-center">
+                   <img
+                       src={p.pageCoverThumbnail || siteConfig('defaultCover')}
+                       alt={p.title}
+                       className="w-20 h-14 object-cover mr-4"
+                   />
+                    <div className="text-gray-darkest hover:underline text-sm">{p.title}</div>
+                 </a>
                 </Link>
                 <hr className="mt-2 border-gray-300 dark:border-gray-600"/>
               </div>
