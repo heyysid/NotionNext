@@ -13,7 +13,7 @@ export const SideBar = (props) => {
   return (         
       <div className="w-full w-80 sm:w-80 md:W-80 sticky top-8">
         <aside className="rounded shadow overflow-hidden mb-6">
-          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"><i className="mr-1 fas fa-hashtag"></i> {post ? "进度条" : locale.COMMON.CATEGORY} </h3>
+          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"> {post ? (<i className="mr-1 fas fa-stream"></i>进度条 ) : (<i className="mr-1 fas fa-hashtag"></i>{locale.COMMON.CATEGORY})}</h3>
           <div className="p-4">
             {post ? (
                <Progress />
