@@ -38,7 +38,7 @@ function renderStarrySky() {
   function f() {
     ;(n = window.innerWidth),
       (e = window.innerHeight),
-      (i = 0.412 * n),
+      (i = 0.216 * n),
       s.setAttribute('width', n),
       s.setAttribute('height', e)
   }
