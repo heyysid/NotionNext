@@ -38,7 +38,7 @@ function renderStarrySky() {
   function f() {
     ;(n = window.innerWidth),
       (e = window.innerHeight),
-      (i = 0.216 * n),
+      (i = 0.412 * n),
       s.setAttribute('width', n),
       s.setAttribute('height', e)
   }
@@ -55,7 +55,7 @@ function renderStarrySky() {
         (this.comet = !this.giant && !o && m(10)),
         (this.x = l(0, n - 10)),
         (this.y = l(0, e)),
-        (this.r = l(1.1, 2.6)),
+        (this.r = l(1.5, 3.5)),
         (this.dx = l(t, 6 * t) + (this.comet + 1 - 1) * t * l(50, 120) + 2 * t),
         (this.dy = -l(t, 6 * t) - (this.comet + 1 - 1) * t * l(50, 120)),
         (this.fadingOut = null),
