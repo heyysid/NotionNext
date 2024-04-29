@@ -10,7 +10,7 @@ import Link from 'next/link';
  */
 export const Title = (props) => {
   const { post } = props
-  const title = post?.title || "Welcome,This is Li Zhongping's blog."
+  const title = post?.title || "Welcome to Li ZhongPing's website."
   const description = post ? "by Li ZhongPing." : (
     <React.Fragment>
       <Link href={`https://lizhongping.asia/category/%E5%9B%BE%E7%89%87`} passHref>
