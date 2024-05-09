@@ -33,7 +33,7 @@ export const Title = (props) => {
 
   return (
     <div className="text-center px-6 py-12 mb-6 bg-transparent dark:bg-transparent dark:border-hexo-black-gray border-b">
-      <h1 className="text-xl md:text-4xl pb-4 mt-8">lizhongping's website</h1>
+      <h1 className="text-xl md:text-4xl pb-4 mt-8">'lizhongping'</h1>
       <p className="leading-loose text-gray-dark">
         {description}
       </p>
