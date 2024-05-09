@@ -181,7 +181,7 @@ const BLOG = {
   CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || false, // 是否显示行号
   CODE_COLLAPSE: process.env.NEXT_PUBLIC_CODE_COLLAPSE || true, // 是否支持折叠代码框
   CODE_COLLAPSE_EXPAND_DEFAULT:
-    process.env.NEXT_PUBLIC_CODE_COLLAPSE_EXPAND_DEFAULT || true, // 折叠代码默认是展开状态
+    process.env.NEXT_PUBLIC_CODE_COLLAPSE_EXPAND_DEFAULT || false, // 折叠代码默认是展开状态
 
   // END********代码相关********
 
@@ -214,7 +214,7 @@ const BLOG = {
   POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW || 'true', //  是否在列表加载文章预览
   POST_PREVIEW_LINES: process.env.NEXT_PUBLIC_POST_POST_PREVIEW_LINES || 12, // 预览博客行数
   POST_RECOMMEND_COUNT: process.env.NEXT_PUBLIC_POST_RECOMMEND_COUNT || 6, // 推荐文章数量
-  POSTS_PER_PAGE: process.env.NEXT_PUBLIC_POST_PER_PAGE || 20, // post counts per page
+  POSTS_PER_PAGE: process.env.NEXT_PUBLIC_POST_PER_PAGE || 10, // post counts per page
   POSTS_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'notion', // 排序方式 'date'按时间,'notion'由notion控制
 
   POST_WAITING_TIME_FOR_404:
@@ -231,7 +231,7 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   POST_DISABLE_GALLERY_CLICK:
-    process.env.NEXT_PUBLIC_POST_DISABLE_GALLERY_CLICK || true, // 画册视图禁止点击，方便在友链页面的画册插入链接
+    process.env.NEXT_PUBLIC_POST_DISABLE_GALLERY_CLICK || true, // 画册视图是否可点击，禁止方便在友链页面的画册插入链接
 
   //   ********动态特效相关********
   // 鼠标点击烟花特效
