@@ -148,11 +148,3 @@ export function isPreferDark() {
 export const loadDarkModeFromLocalStorage = () => {
   return localStorage.getItem('darkMode')
 }
-
-/**
- * 保存深色模式
- * @param newTheme
- */
-export const saveDarkModeToLocalStorage = newTheme => {
-  localStorage.setItem('darkMode', newTheme)
-}
