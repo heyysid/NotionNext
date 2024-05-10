@@ -47,7 +47,7 @@ const BlogPostCard = ({ post }) => {
         {showPageCover && (
             <div className="md:w-5/12 w-full h-44 overflow-hidden p-1">
                 <Link href={`/${post.slug}`} >
-                    <LazyImage src={post?.pageCoverThumbnail} className='w-full bg-cover hover:scale-110 duration-200' />
+                    <LazyImage src={post?.pageCoverThumbnail} className='rounded w-full bg-cover hover:scale-110 duration-200' />
                 </Link>
             </div>
         )}
