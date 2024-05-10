@@ -11,8 +11,8 @@ export const SideBar = (props) => {
   const { locale } = useGlobal()
   const { latestPosts, post, categoryOptions, notice, tagsptions } = props
   return (         
-      <div className="w-full w-80 sm:w-80 md:W-80 sticky top-8">
-        <aside className="rounded shadow overflow-hidden mb-6 pl-10">
+      <div className="w-full w-80 sm:w-80 md:W-80 sticky top-8 pl-10">
+        <aside className="rounded shadow overflow-hidden mb-6">
           <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"> {post ? (<i className="mr-2 fas fa-forward-fast"> 阅读进度 </i>) : (<i className="mr-2 fas fa-hashtag"> {locale.COMMON.CATEGORY} </i>)} </h3>
           <div className="p-4">
             {post ? (
@@ -78,7 +78,7 @@ export const SideBar = (props) => {
          </div>
        </aside>
   
-      <aside className="rounded shadow overflow-hidden mb-6 pl-10">
+      <aside className="rounded shadow overflow-hidden mb-6">
         <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"><i className="mr-2 fas fas fa-history" />最近更新</h3>
         <div className="p-4">
           <ul className="list-reset leading-normal">
@@ -101,7 +101,7 @@ export const SideBar = (props) => {
         </div>
       </aside>
   
-      <aside className='rounded shadow overflow-hidden mb-6 pl-10'>
+      <aside className='rounded shadow overflow-hidden mb-6'>
          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b">社交媒体覆盖</h3>
          <div className='justify-center space-x-3 text-xl text-gray-600 dark:text-gray-300 p-4'>
           {siteConfig('CONTACT_GITHUB') && <a key="github" target='_blank' rel='noreferrer' title={'github'} href={siteConfig('CONTACT_GITHUB')}>
@@ -136,7 +136,7 @@ export const SideBar = (props) => {
           </a>}
         </div>
       </aside>
-      <aside className="rounded  overflow-hidden mb-6 pl-10">
+      <aside className="rounded  overflow-hidden mb-6">
         <Live2D />
       </aside>
     </div>
