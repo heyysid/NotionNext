@@ -25,9 +25,10 @@ const GlobalHead = props => {
   const lang = siteConfig('LANG').replace('-', '_') // Facebook OpenGraph 要 zh_CN 這樣的格式才抓得到語言
   const category = meta?.category || siteConfig('KEYWORDS') // section 主要是像是 category 這樣的分類，Facebook 用這個來抓連結的分類
 
+  // 网站标题 //
   return (
     <Head>
-      <title>{title}</title>
+      <title>lizhongping</title>
       <meta name='theme-color' content={siteConfig('BACKGROUND_DARK')} />
       <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0' />
       <meta name='robots' content='follow, index' />
