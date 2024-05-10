@@ -89,7 +89,7 @@ export const SideBar = (props) => {
                    <img
                        src={p.pageCoverThumbnail || siteConfig('defaultCover')}
                        alt={p.title}
-                       className="w-20 h-14 object-cover mr-4"
+                       className="rounded w-20 h-14 object-cover mr-4"
                    />
                     <div className="text-gray-darkest hover:underline text-sm">{p.title}</div>
                  </a>
