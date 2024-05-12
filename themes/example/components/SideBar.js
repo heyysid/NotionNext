@@ -30,7 +30,7 @@ export const SideBar = (props) => {
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/python`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 bg-transparent dark:bg-gray-800 text-gray-darkest hover:underline ">
-                  <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />编程</div></a>
+                  <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-tag' />python</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/PT%2FBT`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 bg-transparent dark:bg-gray-800 text-gray-darkest hover:underline ">
@@ -60,9 +60,9 @@ export const SideBar = (props) => {
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 bg-transparent dark:bg-gray-800 text-gray-darkest hover:underline ">
                     <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-folder' />项目</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/category/资料`} passHref>
+                 <Link href={`https://lizhongping.asia/category/资源`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 bg-transparent dark:bg-gray-800 text-gray-darkest hover:underline ">
-                    <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-folder' />资料</div></a>
+                    <div className='font-light dark:text-gray-400'><i className='mr-1 fas fa-folder' />资源</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/图片`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-white text-gray-600 hover:shadow-xl dark:border-gray-400 bg-transparent dark:bg-gray-800 text-gray-darkest hover:underline ">
