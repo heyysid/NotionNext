@@ -13,7 +13,7 @@ export const SideBar = (props) => {
   return (         
       <div className="w-full w-80 sm:w-80 md:W-80 sticky top-8">
         <aside className="rounded shadow overflow-hidden mb-6">
-          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"> {post ? (<i className="mr-2 fas fa-forward-fast"> 阅读进度 </i>) : (<i className="mr-2 fas fa-bars"> 导航 </i>)} </h3>
+          <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"> {post ? (<i className="mr-2 fas fa-forward-fast"> 阅读进度 </i>) : (<i className="mr-2 fas fa-bars">导航</i>)} </h3>
           <div className="p-4">
             {post ? (
                <Progress />
@@ -79,7 +79,7 @@ export const SideBar = (props) => {
        </aside>
   
       <aside className="rounded shadow overflow-hidden mb-6">
-        <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"><i className="mr-2 fas fas fa-history" />最近更新</h3>
+        <h3 className="text-sm bg-gray-100 text-gray-700 dark:bg-hexo-black-gray dark:text-gray-200 py-3 px-4 dark:border-hexo-black-gray border-b"><i className="mr-2 fas fa-history" />最近更新</h3>
         <div className="p-4">
           <ul className="list-reset leading-normal">
             {latestPosts?.map(p => (
