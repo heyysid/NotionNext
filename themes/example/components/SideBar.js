@@ -17,6 +17,7 @@ export const SideBar = (props) => {
           <div className="p-4">
             {post ? (
                <Progress />
+               <Catalog />
             ) : (
             <ul className="list-reset leading-normal">
                <li key='1'>
