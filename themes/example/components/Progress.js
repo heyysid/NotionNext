@@ -1,4 +1,5 @@
-import { useEffect, useState, useRef, useCallback } from 'react'
+// Progress.js
+import { useEffect, useState, useRef, useCallback, } from 'react'
 import { isBrowser } from '@/lib/utils'
 import throttle from 'lodash.throttle'
 import { uuidToId } from 'notion-utils'
@@ -9,7 +10,7 @@ import { useGlobal } from '@/lib/global'
  * @returns {JSX.Element}
  * @constructor
  */
-export const Progress = ({ targetRef, showPercent = true }) => {
+const Progress = ({ targetRef, showPercent = true }) => {
   const currentRef = targetRef?.current || targetRef
   const [percent, changePercent] = useState(0)
   const scrollListener = () => {
@@ -52,6 +53,7 @@ export const Progress = ({ targetRef, showPercent = true }) => {
  */
 export const Catalog = ({ toc }) => {
   const { locale } = useGlobal()
+
   // 监听滚动事件
   useEffect(() => {
     window.addEventListener('scroll', actionSectionScrollSpy)
@@ -131,3 +133,6 @@ export const Catalog = ({ toc }) => {
     </div>
   </div>
 }
+
+// 确保 Progress 组件的默认导出
+export default Progress;
