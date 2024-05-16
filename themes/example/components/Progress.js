@@ -1,4 +1,3 @@
-// Progress.js
 import { useEffect, useState, useRef, useCallback, } from 'react'
 import { isBrowser } from '@/lib/utils'
 import throttle from 'lodash.throttle'
@@ -51,7 +50,7 @@ const Progress = ({ targetRef, showPercent = true }) => {
  * @returns {JSX.Element}
  * @constructor
  */
-export const Catalog = ({ toc }) => {
+const Catalog = ({ toc }) => {
   const { locale } = useGlobal()
 
   // 监听滚动事件
@@ -136,3 +135,6 @@ export const Catalog = ({ toc }) => {
 
 // 确保 Progress 组件的默认导出
 export default Progress;
+
+// 确保 Catalog 组件的命名导出
+export { Catalog };
