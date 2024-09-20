@@ -1,5 +1,3 @@
-
-
 <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,3 +41,5 @@
         updateCountdown();
     </script>
 </body>
+
+export default countdown
