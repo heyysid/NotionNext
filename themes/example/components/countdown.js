@@ -1,45 +1,42 @@
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h1 {
-            font-size: 3em;
-        }
-    </style>
-<body>
-    <h1>距离失业还有 <span id="days-left"></span> 天</h1>
+import React, { useState, useEffect } from 'react';
 
-    <script>
-        function calculateRemainingDays(birthday) {
-            const birthday35 = new Date(birthday);
-            birthday35.setFullYear(birthday35.getFullYear() + 35);
+const Countdown = () => {
+    const [remainingDays, setRemainingDays] = useState(null);
 
-            const today = new Date();
-            const timeDiff = birthday35 - today;
-            const remainingDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    // 计算剩余天数的函数
+    const calculateRemainingDays = (birthday) => {
+        const birthday35 = new Date(birthday);
+        birthday35.setFullYear(birthday35.getFullYear() + 35);
 
-            return remainingDays;
-        }
+        const today = new Date();
+        const timeDiff = birthday35 - today;
+        const daysLeft = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
-        function updateCountdown() {
-            const birthday = prompt("请输入你的生日 (格式：YYYY-MM-DD):", "1990-01-01");
-            const remainingDays = calculateRemainingDays(birthday);
+        return daysLeft;
+    };
 
-            const countdownElement = document.getElementById("days-left");
-            countdownElement.textContent = remainingDays;
+    // 当组件挂载时运行，显示 prompt 让用户输入生日
+    useEffect(() => {
+        const birthday = prompt("请输入你的生日 (格式：YYYY-MM-DD):", "1990-01-01");
+        const daysLeft = calculateRemainingDays(birthday);
+        setRemainingDays(daysLeft);
 
-            if (remainingDays <= 0) {
-                countdownElement.textContent = "你已失业";
-            } else {
-                setTimeout(updateCountdown, 1000 * 60 * 60 * 24); // 每天更新一次
-            }
-        }
+        // 每天更新倒计时
+        const interval = setInterval(() => {
+            const updatedDays = calculateRemainingDays(birthday);
+            setRemainingDays(updatedDays);
+        }, 1000 * 60 * 60 * 24); // 每天更新一次
 
-        // 启动倒计时
-        updateCountdown();
-    </script>
-</body>
+        // 清理定时器
+        return () => clearInterval(interval);
+    }, []);
 
-export default countdown
+    return (
+        <div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'Arial, sans-serif' }}>
+            <h1>距离失业还有 <span id="days-left">{remainingDays !== null ? remainingDays : '...'}</span> 天</h1>
+            {remainingDays <= 0 && <h2>你已失业</h2>}
+        </div>
+    );
+};
+
+export default Countdown;
