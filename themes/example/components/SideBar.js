@@ -5,7 +5,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
 import Progress from './Progress';
-import Catalog from './Catalog';
+import { Catalog } from './Catalog';
 
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 export const SideBar = (props) => {
