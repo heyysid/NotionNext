@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { isBrowser } from '@/lib/utils'
-import Catalog from './Catalog' // 引入拆分出来的 Catalog 组件
 
 /**
  * 顶部页面阅读进度条
@@ -41,11 +40,6 @@ const Progress = ({ targetRef, showPercent = true, toc }) => {
             <div className="text-right text-white text-xs">{percent}%</div>
           )}
         </div>
-      </div>
-
-      {/* 目录组件 */}
-      <div className="catalog-container">
-        {toc && toc.length > 0 ? <Catalog toc={toc} /> : null}
       </div>
     </>
   )
