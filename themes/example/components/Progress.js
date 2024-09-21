@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback, } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
 import { isBrowser } from '@/lib/utils'
 import throttle from 'lodash.throttle'
 import { uuidToId } from 'notion-utils'
@@ -12,6 +12,7 @@ import { useGlobal } from '@/lib/global'
 const Progress = ({ targetRef, showPercent = true, toc }) => {
   const currentRef = targetRef?.current || targetRef
   const [percent, changePercent] = useState(0)
+  
   const scrollListener = () => {
     const target = currentRef || (isBrowser && document.getElementById('article-wrapper'))
     if (target) {
@@ -29,24 +30,26 @@ const Progress = ({ targetRef, showPercent = true, toc }) => {
     document.addEventListener('scroll', scrollListener)
     return () => document.removeEventListener('scroll', scrollListener)
   }, [])
-  
+
   return (
-    <div className="h-4 w-full shadow-2xl bg-gray-700 rounded-sm">
-      <div
-        className="h-4 bg-indigo-600 duration-200 rounded-sm"
-        style={{ width: `${percent}%` }}
-      >
-        {showPercent && (
-          <div className="text-right text-white text-xs">{percent}%</div>
-        )}
+    <>
+      {/* 进度条 */}
+      <div className="h-4 w-full shadow-2xl bg-gray-700 rounded-sm">
+        <div
+          className="h-4 bg-indigo-600 duration-200 rounded-sm"
+          style={{ width: `${percent}%` }}
+        >
+          {showPercent && (
+            <div className="text-right text-white text-xs">{percent}%</div>
+          )}
+        </div>
       </div>
-    </div>
 
       {/* 目录组件 */}
       <div className="catalog-container">
         {toc && toc.length > 0 ? <Catalog toc={toc} /> : null}
       </div>
-    </div>
+    </>
   )
 }
 
@@ -99,9 +102,6 @@ const Catalog = ({ toc }) => {
   return (
     <div className='px-3 py-1'>
       <div className='w-full'><i className='mr-1 fas fa-stream' />{locale.COMMON.TABLE_OF_CONTENTS}</div>
-      <div className='w-full py-3'>
-        <Progress />
-      </div>
       <div className='overflow-y-auto max-h-36 lg:max-h-96 overscroll-none scroll-hidden' ref={tRef}>
         <nav className='h-full text-black'>
           {toc.map((tocItem) => {
