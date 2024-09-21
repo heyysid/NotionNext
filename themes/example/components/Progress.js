@@ -9,7 +9,7 @@ import { useGlobal } from '@/lib/global'
  * @returns {JSX.Element}
  * @constructor
  */
-const Progress = ({ targetRef, showPercent = true }) => {
+const Progress = ({ targetRef, showPercent = true, toc }) => {
   const currentRef = targetRef?.current || targetRef
   const [percent, changePercent] = useState(0)
   const scrollListener = () => {
@@ -29,8 +29,7 @@ const Progress = ({ targetRef, showPercent = true }) => {
     document.addEventListener('scroll', scrollListener)
     return () => document.removeEventListener('scroll', scrollListener)
   }, [])
-
-//下方组件是导航栏进度条
+  
   return (
     <div className="h-4 w-full shadow-2xl bg-gray-700 rounded-sm">
       <div
@@ -40,6 +39,12 @@ const Progress = ({ targetRef, showPercent = true }) => {
         {showPercent && (
           <div className="text-right text-white text-xs">{percent}%</div>
         )}
+      </div>
+    </div>
+
+      {/* 目录组件 */}
+      <div className="catalog-container">
+        {toc && toc.length > 0 ? <Catalog toc={toc} /> : null}
       </div>
     </div>
   )
