@@ -5,7 +5,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Announcement from './Announcement'
 import Progress from './Progress';
-import { Catalog } from './Progress';
+import { Catalog } from './Catalog';
 
 const ExampleRecentComments = dynamic(() => import('./ExampleRecentComments'))
 export const SideBar = (props) => {
@@ -35,55 +35,55 @@ export const SideBar = (props) => {
             <ul className="list-reset leading-normal">
                <li key='1'>
                  <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
               <div className='font-light'><i className='mr-1 fas fa-tag' />HDR</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                <div className='font-light'><i className='mr-1 fas fa-tag' />背包徒步</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/python`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                   <div className='font-light'><i className='mr-1 fas fa-tag' />python</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/PT%2FBT`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                  <div className='font-light'><i className='mr-1 fas fa-tag' />PT/BT</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/AI`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-tag' />AI</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/骑行`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                      <div className='font-light'><i className='mr-1 fas fa-tag' />骑行</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/户外`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                      <div className='font-light'><i className='mr-1 fas fa-tag' />户外</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-tag' />业余无线电</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-tag' />摄影</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/计划`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-folder' />计划</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/资源`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-folder' />资源</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/图片`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-folder' />图片</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/文章`} passHref>
-                   <a className="cursor-pointer inline-block rounded dark:text-white dark:hover:text-black dark:hover:bg-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap bg-transparent hover:underline">
+                   <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><i className='mr-1 fas fa-folder' />文章</div></a>
                  </Link>
                </li>
