@@ -28,8 +28,8 @@ export const SideBar = (props) => {
           <div className="p-4">
             {post ? (
               <>
-                <Progress />
-                <Catalog />
+                <Progress toc={post?.toc} />
+                <Catalog toc={post?.toc} />
               </>
             ) : (
             <ul className="list-reset leading-normal">
