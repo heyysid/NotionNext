@@ -14,7 +14,7 @@ export const Nav = (props) => {
     { id: 2, icon: 'fas fa-archive', name: locale.NAV.ARCHIVE, to: '/archive', show: siteConfig('EXAMPLE_MENU_ARCHIVE', null, CONFIG) },
     { id: 3, icon: 'fas fa-folder', name: locale.COMMON.CATEGORY, to: '/category', show: siteConfig('EXAMPLE_MENU_CATEGORY', null, CONFIG) },
     { id: 4, icon: 'fas fa-tag', name: locale.COMMON.TAGS, to: '/tag', show: siteConfig('EXAMPLE_MENU_TAG', null, CONFIG) },
-    { id: 5, icon: 'fas fa-satellite', name:locale.COMMON.feed, to: '/mynews', show: siteConfig('EXAMPLE_MENU_feed', null, CONFIG)  },
+    { id: 5, icon: 'fas fa-image', name:locale.COMMON.feed, to: '/hualang', show: siteConfig('EXAMPLE_MENU_feed', null, CONFIG)  },
   ];
 
   if (customNav) {
