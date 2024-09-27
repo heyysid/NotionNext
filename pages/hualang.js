@@ -8,11 +8,7 @@ const Hualang = () => {
       
       <div className="gallery">
         <img src="/PQ_10_to_1000nits.avif" alt="PQ 10 to 1000 nits" />
-        <img src="/PQ_10_to_1000nits.avif" alt="PQ 10 to 1000 nits" />
-        <img src="/PQ_10_to_1000nits.avif" alt="PQ 10 to 1000 nits" />
-        <img src="/PQ_10_to_1000nits.avif" alt="PQ 10 to 1000 nits" />
-        <img src="/PQ_10_to_1000nits.avif" alt="PQ 10 to 1000 nits" />
-        <img src="/PQ_10_to_1000nits.avif" alt="PQ 10 to 1000 nits" />
+        <img src="/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif" alt="HDR photo" />
       </div>
 
       <style jsx>{`
