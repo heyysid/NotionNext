@@ -31,7 +31,7 @@ return (
         <div className='rounded px-1 md:pl-0 md:mr-3 my-4 md:pr-3 text-gray-700 dark:text-gray-200 no-underline md:border-r border-gray-light'>
           {link?.icon && <i className={link?.icon} />} {link?.name}
           <i
-            className={`px-1 fas fa-chevron-down duration-500 transition-all ${show ? ' rotate-180' : ''}`}></i>
+            className={`px-1 duration-500 transition-all ${show ? ' rotate-180' : ''}`}></i>
         </div>
       )}
 
