@@ -5,12 +5,12 @@ const Hualang = () => {
     {
       src: '/PQ_10_to_1000nits.avif',
       title: 'PQ 10 to 1000nits',
-      description: 'This image demonstrates HDR effects with a dynamic range from 10 to 1000 nits.'
+      description: '这是一个1000 nits的HDR测试页面'
     },
     {
-      src: '/example-image2.avif', // Add more images here
-      title: 'Image 2 Title',
-      description: 'Image 2 description'
+      src: '/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif',
+      title: '这是一个HDR示例图片',
+      description: 'form https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg'
     },
     // Add more images as needed
   ];
