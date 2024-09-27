@@ -12,6 +12,7 @@ const Hualang = () => {
       title: '这是一个完美的HDR图片示例',
       description: 'form https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg'
     },
+    
   ];
 
   return (
@@ -26,36 +27,14 @@ const Hualang = () => {
               src={image.src} 
               alt={image.title} 
               className="gallery-image cursor-pointer" 
-              onClick={() => handleImageClick(image.src)}
+              onClick={() => handleImageClick(image.src)} // Use your existing fullscreen image click handler
             />
             <h3 className="text-center">{image.title}</h3>
             <p className="text-center">{image.description}</p>
           </div>
         ))}
       </div>
-          
-        <button onClick={() => router.back()} className="back-button">
-          返回
-        </button>
     </div>
-      <style jsx>{`
-        .gallery-item {
-          text-align: center;
-          margin-bottom: 20px;
-        }
-        .gallery-image {
-          max-width: 500px;
-          cursor: pointer;
-        }
-        .back-button {
-          margin-top: 20px;
-          padding: 10px 20px;
-          background-color: #333;
-          color: white;
-          border: none;
-          cursor: pointer;
-        }
-      `}</style>
   );
 };
 
