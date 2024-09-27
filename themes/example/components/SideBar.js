@@ -72,19 +72,19 @@ export const SideBar = (props) => {
                  </Link>
                  <Link href={`https://lizhongping.asia/category/计划`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                    <div className='font-light'><i className='mr-1 fas fa-folder' />计划</div></a>
+                    <div className='font-light'><img src="/folder.gif" className='inline-block mr-1' alt="folder icon" />计划</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/资源`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                    <div className='font-light'><i className='mr-1 fas fa-folder' />资源</div></a>
+                    <div className='font-light'><img src="/folder.gif" className='inline-block mr-1' alt="folder icon" />资源</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/图片`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                    <div className='font-light'><i className='mr-1 fas fa-folder' />图片</div></a>
+                    <div className='font-light'><img src="/folder.gif" className='inline-block mr-1' alt="folder icon" />图片</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/category/文章`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                    <div className='font-light'><img src="/folder.gif" className='inline-block mr-1' alt="folder icon" />文章</div></a>
+                    <div className='font-light'><img src="/text.gif" className='inline-block mr-1' alt="text icon" />文章</div></a>
                  </Link>
                </li>
            </ul>
