@@ -13,6 +13,11 @@ const Hualang = () => {
       description: '这是一张展示HDR效果的图片，它的动态范围从10到1000nits'
     },
     {
+      src: '/PQ_100_to_10000nits.avif',
+      title: 'PQ_100_to_10000nits',
+      description: '这是一张展示HDR效果的图片，它的动态范围从100到10000nits'
+    },
+    {
       src:'/摩托车.jpg',
       title:'摩托车',
       description:'20240528在我姐姐的家里'
