@@ -130,7 +130,4 @@ const HualangPage = props => {
     );
   };
 
-  return <Hualang />;
-};
-
-export default HualangPage;
+export default Hualang;
