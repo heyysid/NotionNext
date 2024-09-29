@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/image'; // 使用 Next.js 的 Image 组件
+import Image from 'next/image';
 
 const Hualang = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -33,11 +33,11 @@ const Hualang = () => {
   ];
 
   const handleImageClick = (src) => {
-    setSelectedImage(src); // 设置点击的图片为已选择的图片
+    setSelectedImage(src);
   };
 
   const closeModal = () => {
-    setSelectedImage(null); // 点击外部关闭模态框
+    setSelectedImage(null);
   };
 
   return (
@@ -52,9 +52,10 @@ const Hualang = () => {
               src={image.src} 
               alt={image.title} 
               width={500} 
-              height={500}
+              height={500} 
               className="gallery-image cursor-pointer"
-              onClick={() => handleImageClick(image.src)} // 点击图片显示全屏
+              onClick={() => handleImageClick(image.src)}
+              layout="responsive" // 确保图片保持其比例
             />
             <h3 className="text-center">{image.title}</h3>
             <p className="text-center">{image.description}</p>
@@ -62,11 +63,13 @@ const Hualang = () => {
         ))}
       </div>
 
-      {/* 全屏图片模态框 */}
+      {/* 模态框，点击图片后显示 */}
       {selectedImage && (
         <div className="modal" onClick={closeModal}>
-          <span className="close">&times;</span>
-          <img className="modal-content" src={selectedImage} alt="Full size" />
+          <span className="close" onClick={closeModal}>&times;</span>
+          <div className="modal-content-wrapper">
+            <img className="modal-content" src={selectedImage} alt="Full size" />
+          </div>
         </div>
       )}
     </div>
