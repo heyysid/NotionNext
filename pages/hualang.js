@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Image from 'next/image'; // 使用 Next.js 的 Image 组件
 
 const Hualang = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
-    const images = [
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
     {
       src: '/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif',
       title: '这是一个完美的HDR图片示例',
@@ -33,7 +35,7 @@ const Hualang = () => {
   const handleImageClick = (src) => {
     setSelectedImage(src); // 设置点击的图片为已选择的图片
   };
-  
+
   const closeModal = () => {
     setSelectedImage(null); // 点击外部关闭模态框
   };
@@ -46,17 +48,21 @@ const Hualang = () => {
       <div className="gallery">
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
-            <img 
+            <Image 
               src={image.src} 
               alt={image.title} 
-              className="gallery-image cursor-pointer" 
-              onClick={() => handleImageClick(image.src)} // Use your existing fullscreen image click handler
+              width={500} 
+              height={500}
+              className="gallery-image cursor-pointer"
+              onClick={() => handleImageClick(image.src)} // 点击图片显示全屏
             />
             <h3 className="text-center">{image.title}</h3>
             <p className="text-center">{image.description}</p>
           </div>
         ))}
       </div>
+
+      {/* 全屏图片模态框 */}
       {selectedImage && (
         <div className="modal" onClick={closeModal}>
           <span className="close">&times;</span>
