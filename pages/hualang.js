@@ -12,7 +12,21 @@ const Hualang = () => {
       title: 'PQ 10 to 1000nits',
       description: '这是一张展示HDR效果的图片，它的动态范围从10到1000nits'
     },
-    
+    {
+      src:'/摩托车.jpg',
+      title:'摩托车',
+      description:'20240528在我姐姐的家里'
+    },
+    {
+      src:'/秋.jpg',
+      title:'秋天的G318',
+      description:'2024年6月12日，前往然乌湖的G318路上'
+    },
+    {
+      src:'/姊妹湖.jpg',
+      title:'姊妹湖',
+      description:'2024年6月9日，在四川省甘孜藏族自治州巴塘县'
+    },
   ];
 
   return (
