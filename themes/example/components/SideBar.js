@@ -60,7 +60,7 @@ export const SideBar = (props) => {
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/户外`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                     <div className='font-light'><img src="/sphere1.gif" className='inline-block mr-1' alt="sphere1.gif icon" />户外</div></a>
+                     <div className='font-light'><img src="/1165257258.png" className='inline-block mr-1' alt="1165257258.png icon" />户外</div></a>
                  </Link>
                  <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
