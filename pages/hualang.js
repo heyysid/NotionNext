@@ -33,7 +33,7 @@ return (
     <div>
       <h1>画廊</h1>
       <p>这是我的画廊页面，展示一些作品和图片。</p>
-      <span style={{ display: 'inline' }}>本页面的大部分图像是HDR，在阅览之前，你可以使用web工具检查你当前观看环境是否支持HDR。<a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a><a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500" >SDR和HDR对比</a></span><p>*请使用最新版本的Chrome打开</p>
+      <span style={{ display: 'inline' }}>本页面的大部分图像是HDR，在阅览之前，你可以使用web工具检查你当前观看环境是否支持HDR。<a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a> <a>;</a><a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500" >SDR和HDR对比</a><a>*请使用最新版本的Chrome打开</a></span>
   
       <p style={{ display: 'inline' }}>如果你仍然无法正确预览HDR，请确认Chrome的开发者实验室栏目里对应HDR的功能是否被禁用：<a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500" >重要注意事项:</a></p>
   
