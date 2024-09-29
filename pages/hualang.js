@@ -49,7 +49,7 @@ return (
       
       <p style={{ margin: '20px 0' }}>
         想了解更多有关HDR的信息，比如HDR与SDR的区别，请访问：
-        <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#46fbfcfec9554340abdfe306b670ce78" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
       </p>
       <div className="gallery">
         {images.map((image, index) => (
