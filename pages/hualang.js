@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Hualang = () => {
-  const images = [
+    const [selectedImage, setSelectedImage] = useState(null);
+    const images = [
     {
       src: '/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif',
       title: '这是一个完美的HDR图片示例',
@@ -20,7 +21,7 @@ const Hualang = () => {
     {
       src:'/秋.jpg',
       title:'秋天的G318',
-      description:'2024年6月12日，前往然乌湖的G318路上'
+      description:'前往然乌湖的G318路上'
     },
     {
       src:'/姊妹湖.jpg',
@@ -28,6 +29,14 @@ const Hualang = () => {
       description:'2024年6月9日，在四川省甘孜藏族自治州巴塘县'
     },
   ];
+
+  const handleImageClick = (src) => {
+    setSelectedImage(src); // 设置点击的图片为已选择的图片
+  };
+  
+  const closeModal = () => {
+    setSelectedImage(null); // 点击外部关闭模态框
+  };
 
   return (
     <div>
@@ -48,11 +57,14 @@ const Hualang = () => {
           </div>
         ))}
       </div>
+      {selectedImage && (
+        <div className="modal" onClick={closeModal}>
+          <span className="close">&times;</span>
+          <img className="modal-content" src={selectedImage} alt="Full size" />
+        </div>
+      )}
     </div>
   );
-};
-
-const handleImageClick = (src) => {
 };
 
 export default Hualang;
