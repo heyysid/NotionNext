@@ -57,4 +57,4 @@ return (
   </div>
 );
 
-export default Hualang;
+export default Hualang
