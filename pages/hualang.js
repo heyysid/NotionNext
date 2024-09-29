@@ -33,11 +33,24 @@ return (
     <div>
       <h1>画廊</h1>
       <p>这是我的画廊页面，展示一些作品和图片。</p>
-      <span style={{ display: 'inline' }}>本页面的大部分图像是HDR，在阅览之前，你可以使用web工具检查你当前观看环境是否支持HDR。<a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a> <a>;</a><a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500" >SDR和HDR对比</a><a>*请使用最新版本的Chrome打开</a></span>
-  
-      <p style={{ display: 'inline' }}>如果你仍然无法正确预览HDR，请确认Chrome的开发者实验室栏目里对应HDR的功能是否被禁用：<a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500" >重要注意事项:</a></p>
-  
-      <p style={{ display: 'inline' }}>想了解更多有关HDR的信息，比如HDR与SDR的区别，请访问：<a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#46fbfcfec9554340abdfe306b670ce78" className="hover:underline text-blue-500" >HDR（高动态范围）图片制作的资料和工具快查表</a></p>
+      
+      <p>
+        本页面的大部分图像是HDR，在阅览之前，你可以使用web工具检查你当前观看环境是否支持HDR。
+        <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
+        ; 
+        <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
+        <a>（*请使用最新版本的Chrome打开）</a>
+      </p>
+      
+      <p>
+        如果你仍然无法正确预览HDR，请确认Chrome的开发者实验室栏目里对应HDR的功能是否被禁用：
+        <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
+      </p>
+      
+      <p>
+        想了解更多有关HDR的信息，比如HDR与SDR的区别，请访问：
+        <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#46fbfcfec9554340abdfe306b670ce78" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
+      </p>
       <div className="gallery">
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
