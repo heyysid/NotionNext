@@ -55,6 +55,6 @@ return (
       ))}
     </div>
   </div>
-);
+)
 
 export default Hualang
