@@ -34,8 +34,7 @@ return (
     <h1>画廊</h1>
     <p>这是我的画廊页面，展示一些作品和图片。</p>
     <p>
-      在阅览之前，你可以使用下方的 web 工具检查你当前观看环境是否支持 HDR，这会有助于阅览，
-      因为本页面的图像大部分都是 HDR。
+      在阅览之前，你可以使用下方的 web 工具检查你当前观看环境是否支持 HDR，这会有助于阅览，因为本页面的图像大部分都是 HDR。
     </p>
     <a 
       target="_blank" 
@@ -53,7 +52,7 @@ return (
         className="notion-link" 
         href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94"
       >
-        重要注意事项
+        重要注意事项:
       </a>
     </p>
     <a 
