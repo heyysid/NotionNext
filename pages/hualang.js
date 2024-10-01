@@ -40,7 +40,7 @@ return (
       <p>这是我的画廊页面，展示一些作品和图片。</p>
       
       <p style={{ margin: '20px 0' }}>
-        本页画廊的大部分图片是HDR，为了确保您能够正确预览，您可以使用下方的web工具检查当前观看环境是否支持HDR。
+        本页的图片大部分是HDR，请先确认您当前观看环境是否能正确预览HDR效果，您可以使用下方的web工具检查当前观看环境是否已支持HDR。
         <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
         ; 
         <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
