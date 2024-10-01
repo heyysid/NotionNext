@@ -36,11 +36,11 @@ const Hualang = () => {
 
 return (
     <div>
-      <h1>画廊</h1>
+      <h1>《画廊》</h1>
       <p>这是我的画廊页面，展示一些作品和图片。</p>
       
       <p style={{ margin: '20px 0' }}>
-        本页面的大部分图像是HDR，在阅览之前，你可以使用web工具检查你当前观看环境是否支持HDR。
+        本页画廊的大部分图片是HDR，为了确保您能够正确预览，您可以使用下方的web工具检查当前观看环境是否支持HDR。
         <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
         ; 
         <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
@@ -48,12 +48,12 @@ return (
       </p>
       
       <p style={{ margin: '20px 0' }}>
-        如果你仍然无法正确预览HDR，请确认Chrome的开发者实验室栏目里对应HDR的功能是否被禁用：
+        如果您确认您的硬件环境支持HDR，但您仍然无法正确预览本页面的HDR，请确认您是否使用的是Chrome浏览器的最新版本，然后请确保Chrome的开发者实验室栏目里对应HDR的功能没有被禁用：
         <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
       </p>
       
       <p style={{ margin: '20px 0' }}>
-        想了解更多有关HDR的信息，比如HDR与SDR的区别，请访问：
+        如果您此前不曾接触HDR，现在想进一步了解有关HDR的信息，比如HDR与SDR的区别，请访问我的另一个页面：
         <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
       </p>
       <div className="gallery">
