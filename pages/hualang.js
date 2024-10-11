@@ -53,7 +53,7 @@ return (
     <div>
       <h1>《画廊》</h1>
       <p>这是我的画廊页面，展示一些作品和图片。</p>
-      <p>// 浏览指引</p>
+      <p>浏览指引>>></p>
       <p style={{ margin: '20px 0' }}>
         本页的图像大部分是HDR，请先确认您当前观看环境是否能正确预览HDR效果，您可以使用下方的web工具检查当前观看环境是否支持预览HDR。
         <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
