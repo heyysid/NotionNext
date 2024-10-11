@@ -42,11 +42,6 @@ const Hualang = () => {
       title:'乌鲁木齐秋jpgSDR5',
       description:'2024年10月11日，在乌鲁木齐'
     },
-    {
-      src:'/乌鲁木齐秋jpgSDR.jpg',
-      title:'乌鲁木齐秋jpgSDR',
-      description:'2024年10月11日，在乌鲁木齐'
-    },
   ];
 
 return (
