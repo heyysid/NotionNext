@@ -18,9 +18,9 @@ const Hualang = () => {
       description: '这是一张展示HDR效果的图片，它的动态范围从100到10000nits'
     },
     {
-      src:'/摩托车.jpg',
-      title:'摩托车',
-      description:'20240528在我姐姐的家里'
+      src:'/梦幻-树.jpg',
+      title:'SDR',
+      description:'SDR8bit'
     },
     {
       src:'/秋.jpg',
@@ -41,6 +41,11 @@ const Hualang = () => {
       src:'/乌鲁木齐秋jpgSDR5.jpg',
       title:'乌鲁木齐秋jpgSDR5',
       description:'2024年10月11日，在乌鲁木齐'
+    },
+    {
+      src:'/梦幻-草地.jpg',
+      title:'SDR',
+      description:' SDR8bit'
     },
   ];
 
