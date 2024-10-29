@@ -47,6 +47,16 @@ const Hualang = () => {
       title:'20240825-12.jpg',
       description:'2024年10月11日在喀什古城'
     },
+    {
+      src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG',
+      title:'G219新藏线往新疆方向（暖）sRGBJPG10.JPG',
+      description:'2024年10月11日在G219新藏线往新疆方向'
+    },
+    {
+      src:'/G219新藏线往新疆方向sRGBJPG10.JPG',
+      title:'G219新藏线往新疆方向sRGBJPG10.JPG',
+      description:'2024年10月11日在G219新藏线往新疆方向'
+    },
   ];
 
 return (
