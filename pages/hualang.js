@@ -3,24 +3,34 @@ import React from 'react'
 const Hualang = () => {
   const images = [
     {
-      src: '/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif',
-      title: '这是一个完美的HDR图片示例',
-      description: 'form https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg'
+      src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif',
+      title:'这是一个完美的HDR图片示例',
+      description:'form https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg'
     },
     {
-      src: '/PQ_10_to_1000nits.avif',
-      title: 'PQ 10 to 1000nits',
-      description: '这是一张展示HDR效果的图片，它的动态范围从10到1000nits'
+      src:'/PQ_10_to_1000nits.avif',
+      title:'PQ 10 to 1000nits',
+      description:'这是一张展示HDR效果的图片，它的动态范围从10到1000nits'
     },
     {
-      src: '/PQ_100_to_10000nits.avif',
-      title: 'PQ_100_to_10000nits',
-      description: '这是一张展示HDR效果的图片，它的动态范围从100到10000nits'
+      src:'/PQ_100_to_10000nits.avif',
+      title:'PQ_100_to_10000nits',
+      description:'这是一张展示HDR效果的图片，它的动态范围从100到10000nits'
     },
     {
       src:'/梦幻-树.jpg',
       title:'SDR',
       description:'SDR8bit'
+    },
+    {
+      src:'/梦幻-草地.jpg',
+      title:'SDR',
+      description:'SDR8bit'
+    },
+    {
+      src:'/乌鲁木齐秋jpgSDR3-已锐化.jpg',
+      title:'乌鲁木齐秋jpgSDR3-已锐化.jpg',
+      description:'2024年10月11日在乌鲁木齐'
     },
     {
       src:'/秋.jpg',
@@ -33,19 +43,9 @@ const Hualang = () => {
       description:'2024年6月9日，在四川省甘孜藏族自治州巴塘县'
     },
     {
-      src:'/乌鲁木齐秋jpgSDR3.jpg',
-      title:'乌鲁木齐秋jpgSDR3',
-      description:'2024年10月11日，在乌鲁木齐'
-    },
-    {
-      src:'/乌鲁木齐秋jpgSDR5.jpg',
-      title:'乌鲁木齐秋jpgSDR5',
-      description:'2024年10月11日，在乌鲁木齐'
-    },
-    {
-      src:'/梦幻-草地.jpg',
-      title:'SDR',
-      description:' SDR8bit'
+      src:'/20240825-12.jpg',
+      title:'20240825-12.jpg',
+      description:'2024年10月11日在喀什古城'
     },
   ];
 
