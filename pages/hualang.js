@@ -28,9 +28,9 @@ const Hualang = () => {
       description:'SDR8bit'
     },
     {
-      src:'/乌鲁木齐秋jpgSDR3-已锐化.jpg',
-      title:'乌鲁木齐秋jpgSDR3-已锐化.jpg',
-      description:'2024年10月11日在乌鲁木齐'
+      src:'/雪乡禾木SDRsRGB8k.jpg',
+      title:'雪乡禾木SDRsRGB8k.jpg',
+      description:'禾木'
     },
     {
       src:'/秋.jpg',
@@ -38,9 +38,9 @@ const Hualang = () => {
       description:'前往然乌湖的G318路上'
     },
     {
-      src:'/姊妹湖.jpg',
-      title:'姊妹湖',
-      description:'2024年6月9日，在四川省甘孜藏族自治州巴塘县'
+      src:'/禾木桥已经锐化.jpg',
+      title:'禾木桥已经锐化.jpg',
+      description:'禾木桥'
     },
     {
       src:'/20240825-12.jpg',
