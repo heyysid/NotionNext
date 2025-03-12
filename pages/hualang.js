@@ -35,7 +35,7 @@ const Hualang = () => {
     {
       src:'/秋.jpg',
       title:'秋天的G318',
-      description:'前往然乌湖的G318路上'
+      description:'前往然乌湖的路上'
     },
     {
       src:'/禾木桥已经锐化.jpg',
