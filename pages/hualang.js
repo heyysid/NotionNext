@@ -20,6 +20,14 @@ const Hualang = () => {
   const handleNext = () => setSelectedIndex((selectedIndex + 1) % images.length);
   const handlePrev = () => setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
 
+    useEffect(() => {
+    const enableContextMenu = (e) => e.stopPropagation();
+    document.addEventListener('contextmenu', enableContextMenu, true);
+    return () => {
+      document.removeEventListener('contextmenu', enableContextMenu, true);
+    };
+  }, []);
+
   return (
     <div>
       <h1>《画廊》</h1>
