@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Hualang = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -61,60 +61,51 @@ const Hualang = () => {
     },
   ];
 
-  // 移除右键限制
-  useEffect(() => {
-    const enableContextMenu = (e) => e.stopPropagation();
-    document.addEventListener('contextmenu', enableContextMenu, true);
-    return () => {
-      document.removeEventListener('contextmenu', enableContextMenu, true);
-    };
-  }, []);
-
   return (
-      <div>
-        <h1>《画廊》</h1>
-        <p>这是我的画廊页面，展示一些作品和图片。（8/100）</p>
-        <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
-        <p>
-          本页的图像大部分是HDR，请先确认您当前观看环境是否能正确预览HDR效果，您可以使用下方的web工具检查当前观看环境是否支持预览HDR。
-          <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
-          ; 
-          <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
-          <a>（*请使用最新版本的Chrome打开）</a>
-        </p>
-        
-        <p style={{ margin: '20px 0' }}>
-          如果您确认您的硬件环境支持HDR，但您仍然无法正确预览本页面的HDR图像，请确认使用的Chrome浏览器版本是否为最新版，然后在Chrome的开发者实验室栏目里找到对应HDR的功能，确保HDR没有被禁用：
-          <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
-        </p>
-        
-        <p style={{ margin: '20px 0' }}>
-          如果您此前不曾接触HDR，现在想进一步了解有关HDR的信息，比如HDR与SDR的区别，请访问我的另一个页面：
-          <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
-        </p>
-        <div className="gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {images.map((image, index) => (
-            <div key={index} className="gallery-item">
-              <img 
-                src={image.src} 
-                alt={image.title} 
-                className="gallery-image cursor-pointer"
-                onClick={() => setSelectedImage(image.src)}
-              />
-              <h3 className="text-center">{image.title}</h3>
-              <p className="text-center">{image.description}</p>
-            </div>
-          ))}
-        </div>
+    <div>
+      <h1>《画廊》</h1>
+      <p>这是我的画廊页面，展示一些作品和图片。（8/100）</p>
 
-        {/* 点击后弹窗显示原图 */}
-        {selectedImage && (
-          <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50" onClick={() => setSelectedImage(null)}>
-            <img src={selectedImage} alt="Original" className="max-w-[90%] max-h-[90%]" />
+      {/* 图片展示区域 */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {images.map((image, index) => (
+          <div 
+            key={index} 
+            className="relative overflow-hidden w-full pt-[100%] cursor-pointer"
+            onClick={() => setSelectedImage(image)}
+          >
+            <img 
+              src={image.src} 
+              alt={image.title} 
+              className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90"
+              style={{ objectFit: 'cover' }}
+            />
           </div>
-        )}
+        ))}
       </div>
-  )
-}
+
+      {/* 图片弹窗展示 */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div 
+            className="max-w-[90%] max-h-[90%] flex flex-col items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img 
+              src={selectedImage.src} 
+              alt={selectedImage.title} 
+              className="max-w-full max-h-[80vh] mb-4"
+            />
+            <h3 className="text-white text-xl">{selectedImage.title}</h3>
+            <p className="text-white text-center">{selectedImage.description}</p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default Hualang;
