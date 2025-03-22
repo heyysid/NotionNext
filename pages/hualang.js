@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Hualang = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
