@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '@/layouts/Layout';
 
 const Hualang = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -72,7 +71,6 @@ const Hualang = () => {
   }, []);
 
   return (
-    <Layout>
       <div>
         <h1>《画廊》</h1>
         <p>这是我的画廊页面，展示一些作品和图片。（8/100）</p>
@@ -116,7 +114,6 @@ const Hualang = () => {
           </div>
         )}
       </div>
-    </Layout>
   )
 }
 
