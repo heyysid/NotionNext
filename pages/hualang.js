@@ -10,11 +10,15 @@ const Hualang = () => {
     { src:'/梦幻-树.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/梦幻-草地.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/雪乡禾木SDRsRGB8k.jpg', title:'雪乡禾木', description:'禾木' },
-    { src:'/秋.jpg', title:'秋天的G318', description:'前往然乌湖的路上' },
+    { src:'/_DSC0883-已锐化.jpg', title:'秋天的G318', description:'前往然乌湖的路上' },
     { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥' },
     { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年10月11日在喀什古城' },
     { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'新藏线', description:'2024年10月11日在G219新藏线往新疆方向' },
     { src:'/G219新藏线往新疆方向sRGBJPG10.JPG', title:'新藏线', description:'2024年10月11日在G219新藏线往新疆方向' },
+    { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10', description:'2024年10月在冈仁波齐' },
+    { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
+    { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
+    
   ];
 
   const handleNext = () => setSelectedIndex((selectedIndex + 1) % images.length);
