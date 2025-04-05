@@ -1,9 +1,10 @@
-import React, { useState,, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 const Hualang = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [showControls, setShowControls] = useState(true);
+  const hideTimeout = useRef(null);
 
   const images = [
     { src: '/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title: '这是一个完美的HDR图片示例', description: 'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg' },
