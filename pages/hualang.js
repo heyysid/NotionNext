@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Hualang = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [isPortrait, setIsPortrait] = useState(false);
 
   const images = [
     { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg' },
@@ -25,12 +26,12 @@ const Hualang = () => {
     { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
     { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' },
     
-  ];
+      ];
 
   const handleNext = () => setSelectedIndex((selectedIndex + 1) % images.length);
   const handlePrev = () => setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
 
-    useEffect(() => {
+  useEffect(() => {
     const enableContextMenu = (e) => e.stopPropagation();
     document.addEventListener('contextmenu', enableContextMenu, true);
     return () => {
@@ -61,24 +62,64 @@ const Hualang = () => {
           <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
         </p>
 
-      {/* 图片展示区域 */}
+      {/* 图片网格 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
-          <div key={index} className="relative overflow-hidden w-full pt-[100%] cursor-pointer" onClick={() => setSelectedIndex(index)}>
-            <img src={image.src} alt={image.title} className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90" />
-            <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white text-center p-1">{image.title}</div>
+          <div
+            key={index}
+            className="relative overflow-hidden w-full pt-[100%] cursor-pointer"
+            onClick={() => setSelectedIndex(index)}
+          >
+            <img
+              src={image.src}
+              alt={image.title}
+              className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90"
+            />
+            <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white text-center p-1">
+              {image.title}
+            </div>
           </div>
         ))}
       </div>
 
-      {/* 图片弹窗展示 */}
+      {/* 弹窗展示 */}
       {selectedIndex !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50" onClick={() => setSelectedIndex(null)}>
-          <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handlePrev(); }}>&#10094;</button>
-          <div className="max-w-[90%] max-h-[90%] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
-            <img src={images[selectedIndex].src} alt={images[selectedIndex].title} className="max-w-full max-h-[80vh] mb-4" />
+        <div
+          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center 
+            ${isPortrait ? 'items-start py-[10vh]' : 'items-center'} z-50`}
+          onClick={() => setSelectedIndex(null)}
+        >
+          {/* 上一张 */}
+          <button
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
+            onClick={e => { e.stopPropagation(); handlePrev(); }}
+          >&#10094;</button>
+
+          {/* 图片容器 */}
+          <div
+            className="max-w-[90%] max-h-[90%] flex flex-col items-center"
+            onClick={e => e.stopPropagation()}
+          >
+            <img
+              src={images[selectedIndex].src}
+              alt={images[selectedIndex].title}
+              className="max-w-full max-h-[80vh] mb-4"
+              onLoad={e => {
+                const { naturalWidth: w, naturalHeight: h } = e.target;
+                setIsPortrait(h > w);
+              }}
+            />
+            <div className="text-white text-center">
+              <h2 className="text-xl mb-1">{images[selectedIndex].title}</h2>
+              <p className="text-sm">{images[selectedIndex].description}</p>
+            </div>
           </div>
-          <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handleNext(); }}>&#10095;</button>
+
+          {/* 下一张 */}
+          <button
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
+            onClick={e => { e.stopPropagation(); handleNext(); }}
+          >&#10095;</button>
         </div>
       )}
     </div>
