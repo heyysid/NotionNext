@@ -12,15 +12,18 @@ const Hualang = () => {
     { src:'/雪乡禾木SDRsRGB8k.jpg', title:'雪乡禾木', description:'禾木' },
     { src:'/_DSC0883-已锐化.jpg', title:'秋天的G318', description:'前往然乌湖的路上' },
     { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥' },
-    { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10', description:'2024年10月在冈仁波齐' },
-    { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年10月11日在G219新藏线往新疆方向' },
+    { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10', description:'2024年6月在冈仁波齐' },
+    { src:'/冈仁波齐蓝调1.jpg', title:'冈仁波齐蓝调', description:'2024年6月在冈仁波齐' },
+    { src:'/白沙湖.jpg', title:'白沙湖', description:'白沙湖' },
+    { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年6月11日在G219新藏线往新疆方向' },
+    { src:'/_DSC1375-sharpened.jpg', title:'嘎玛沟小朋友', description:'嘎玛沟藏民小便宜' },
     { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
     { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
     { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
     { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
     { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
-    { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年10月11日在喀什古城' },
+    { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' },
     
   ];
 
@@ -38,7 +41,7 @@ const Hualang = () => {
   return (
     <div>
       <h1>《画廊》</h1>
-        <p>这是我的画廊页面，展示一些作品和图片。（8/100）</p>
+        <p>这是我的画廊页面，展示一些作品和图片。（17/100）</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
         <p>
           本页的图像大部分是HDR，请先确认您当前观看环境是否能正确预览HDR效果，您可以使用下方的web工具检查当前观看环境是否支持预览HDR。
