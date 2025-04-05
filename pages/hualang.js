@@ -5,24 +5,24 @@ const Hualang = () => {
   const [isPortrait, setIsPortrait] = useState(false);
 
   const images = [
-    { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg' },
+    { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg', portrait: true },
     { src:'/PQ_10_to_1000nits.avif', title:'PQ 10 to 1000nits', description:'这是一张展示HDR效果的图片，它的动态范围从10到1000nits' },
     { src:'/PQ_100_to_10000nits.avif', title:'PQ 100 to 10000nits', description:'这是一张展示HDR效果的图片，它的动态范围从100到10000nits' },
-    { src:'/梦幻-树.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/梦幻-树.jpg', title:'SDR', description:'SDR8bit', portrait: true },
     { src:'/梦幻-草地.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/雪乡禾木SDRsRGB8k.jpg', title:'雪乡禾木', description:'禾木' },
     { src:'/_DSC0883-已锐化.jpg', title:'秋天的G318', description:'前往然乌湖的路上' },
-    { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥' },
+    { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥', portrait: true },
     { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10', description:'2024年6月在冈仁波齐' },
-    { src:'/冈仁波齐蓝调1.jpg', title:'冈仁波齐蓝调', description:'2024年6月在冈仁波齐' },
+    { src:'/冈仁波齐蓝调1.jpg', title:'冈仁波齐蓝调', description:'2024年6月在冈仁波齐', portrait: true },
     { src:'/白沙湖.jpg', title:'白沙湖', description:'白沙湖' },
     { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年6月11日在G219新藏线往新疆方向' },
     { src:'/_DSC1375-sharpened.jpg', title:'嘎玛沟小朋友', description:'嘎玛沟藏民小便宜' },
     { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
-    { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
-    { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
-    { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
+    { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit', portrait: true },  
+    { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome', portrait: true },
+    { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi', portrait: true },
     { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
     { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' },
     
@@ -38,6 +38,8 @@ const Hualang = () => {
       document.removeEventListener('contextmenu', enableContextMenu, true);
     };
   }, []);
+
+  const isPortrait = selectedIndex !== null && images[selectedIndex]?.portrait === true;
 
   return (
     <div>
@@ -65,16 +67,8 @@ const Hualang = () => {
       {/* 图片网格 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative overflow-hidden w-full pt-[100%] cursor-pointer"
-            onClick={() => setSelectedIndex(index)}
-          >
-            <img
-              src={image.src}
-              alt={image.title}
-              className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90"
-            />
+          <div key={index} className="relative overflow-hidden w-full pt-[100%] cursor-pointer" onClick={() => setSelectedIndex(index)}>
+            <img src={image.src} alt={image.title} className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90" />
             <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white text-center p-1">
               {image.title}
             </div>
@@ -85,41 +79,16 @@ const Hualang = () => {
       {/* 弹窗展示 */}
       {selectedIndex !== null && (
         <div
-          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center 
-            ${isPortrait ? 'items-start py-[10vh]' : 'items-center'} z-50`}
+          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center ${isPortrait ? 'items-start py-[5vh]' : 'items-center py-[10vh]'} z-50`}
           onClick={() => setSelectedIndex(null)}
         >
-          {/* 上一张 */}
-          <button
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
-            onClick={e => { e.stopPropagation(); handlePrev(); }}
-          >&#10094;</button>
-
-          {/* 图片容器 */}
-          <div
-            className="max-w-[90%] max-h-[90%] flex flex-col items-center"
-            onClick={e => e.stopPropagation()}
-          >
-            <img
-              src={images[selectedIndex].src}
-              alt={images[selectedIndex].title}
-              className="max-w-full max-h-[80vh] mb-4"
-              onLoad={e => {
-                const { naturalWidth: w, naturalHeight: h } = e.target;
-                setIsPortrait(h > w);
-              }}
-            />
+          <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handlePrev(); }}>&#10094;</button>
+          <div className="max-w-[90%] max-h-[90%] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
+            <img src={images[selectedIndex].src} alt={images[selectedIndex].title} className="max-w-full max-h-[80vh] mb-4" />
             <div className="text-white text-center">
-              <h2 className="text-xl mb-1">{images[selectedIndex].title}</h2>
-              <p className="text-sm">{images[selectedIndex].description}</p>
             </div>
           </div>
-
-          {/* 下一张 */}
-          <button
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
-            onClick={e => { e.stopPropagation(); handleNext(); }}
-          >&#10095;</button>
+          <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handleNext(); }}>&#10095;</button>
         </div>
       )}
     </div>
