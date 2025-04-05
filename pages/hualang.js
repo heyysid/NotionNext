@@ -74,8 +74,6 @@ const Hualang = () => {
           <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handlePrev(); }}>&#10094;</button>
           <div className="max-w-[90%] max-h-[90%] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
             <img src={images[selectedIndex].src} alt={images[selectedIndex].title} className="max-w-full max-h-[80vh] mb-4" />
-            <h3 className="text-white text-xl">{images[selectedIndex].title}</h3>
-            <p className="text-white text-center">{images[selectedIndex].description}</p>
           </div>
           <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handleNext(); }}>&#10095;</button>
         </div>
