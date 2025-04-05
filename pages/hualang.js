@@ -57,17 +57,6 @@ const Hualang = () => {
     };
   }, [selectedIndex]);
 
-  useEffect(() => {
-    if (selectedIndex !== null) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [selectedIndex]);
-
   const isPortrait =
     selectedIndex !== null && images[selectedIndex]?.portrait === true;
 
@@ -117,12 +106,10 @@ const Hualang = () => {
       {/* 弹窗 */}
       {selectedIndex !== null && (
         <div
-          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center ${
-            isPortrait ? 'items-start py-[5vh]' : 'items-center py-[10vh]'
-          } z-50`}
+          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center z-50 ${
+            isPortrait ? 'items-start pt-[2vh] pb-[2vh]' : 'items-center py-[10vh]'
+          }`}
           onClick={() => setSelectedIndex(null)}
-          role="dialog"
-          aria-modal="true"
         >
           {/* ← */}
           <button
@@ -139,7 +126,7 @@ const Hualang = () => {
             <img
               src={images[selectedIndex].src}
               alt={images[selectedIndex].title}
-              className={`mb-4 ${isPortrait ? 'max-h-[80vh] w-auto' : 'max-w-full max-h-[80vh]'}`}
+              className={`${isPortrait ? 'h-[96vh] w-auto' : 'max-w-full max-h-[80vh]'} mb-4`}
             />
           </div>
 
