@@ -24,33 +24,30 @@ const Hualang = () => {
     { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi', portrait: true },
     { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
     { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' },
-    
-      ];
+  ];
 
-  const handleNext = () => setSelectedIndex((selectedIndex + 1) % images.length);
-  const handlePrev = () => setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
+  const handleNext = () =>
+    setSelectedIndex((selectedIndex + 1) % images.length);
+  const handlePrev = () =>
+    setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
 
   useEffect(() => {
-    const enableContextMenu = (e) => e.stopPropagation();
-    document.addEventListener('contextmenu', enableContextMenu, true);
-    return () => {
-      document.removeEventListener('contextmenu', enableContextMenu, true);
-    };
-  }, []);
-
-      {/* 左右键翻图 */}
+    // 右键保留
+    const enableContextMenu = e => e.stopPropagation();
+    // ← → 切图
     const onKeyDown = e => {
       if (selectedIndex !== null) {
         if (e.key === 'ArrowLeft') {
           e.preventDefault();
           handlePrev();
-        }
-        if (e.key === 'ArrowRight') {
+        } else if (e.key === 'ArrowRight') {
           e.preventDefault();
           handleNext();
         }
       }
     };
+
+    document.addEventListener('contextmenu', enableContextMenu, true);
     document.addEventListener('keydown', onKeyDown);
 
     return () => {
@@ -59,9 +56,11 @@ const Hualang = () => {
     };
   }, [selectedIndex]);
 
-      {/* 仅此处声明一次 isPortrait */}
+  // 如果不支持可选链，这里用 && 代替
   const isPortrait =
-    selectedIndex !== null && images[selectedIndex]?.portrait === true;
+    selectedIndex !== null &&
+    images[selectedIndex] &&
+    images[selectedIndex].portrait === true;
 
   return (
     <div>
@@ -85,39 +84,28 @@ const Hualang = () => {
           如果您此前不曾接触HDR，现在想进一步了解有关HDR的信息，比如HDR与SDR的区别，请访问我的另一个页面：
           <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
         </p>
-
+      
       {/* 图片网格 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {images.map((image, index) => (
-          <div key={index} className="relative overflow-hidden w-full pt-[100%] cursor-pointer" onClick={() => setSelectedIndex(index)}>
-            <img src={image.src} alt={image.title} className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90" />
-            <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white text-center p-1">
-              {image.title}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* 弹窗展示 */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {images.map((image, idx) => (
+        {images.map((img, i) => (
           <div
-            key={idx}
+            key={i}
             className="relative overflow-hidden w-full pt-[100%] cursor-pointer"
-            onClick={() => setSelectedIndex(idx)}
+            onClick={() => setSelectedIndex(i)}
           >
             <img
-              src={image.src}
-              alt={image.title}
+              src={img.src}
+              alt={img.title}
               className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90"
             />
             <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white text-center p-1">
-              {image.title}
+              {img.title}
             </div>
           </div>
         ))}
       </div>
 
+      {/* 弹窗 */}
       {selectedIndex !== null && (
         <div
           className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center ${
@@ -128,10 +116,7 @@ const Hualang = () => {
           {/* ← */}
           <button
             className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
-            onClick={e => {
-              e.stopPropagation();
-              handlePrev();
-            }}
+            onClick={e => { e.stopPropagation(); handlePrev(); }}
           >
             &#10094;
           </button>
@@ -152,10 +137,7 @@ const Hualang = () => {
           {/* → */}
           <button
             className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
-            onClick={e => {
-              e.stopPropagation();
-              handleNext();
-            }}
+            onClick={e => { e.stopPropagation(); handleNext(); }}
           >
             &#10095;
           </button>
