@@ -32,9 +32,7 @@ const Hualang = () => {
     setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
 
   useEffect(() => {
-    // 右键保留
     const enableContextMenu = e => e.stopPropagation();
-    // ← → 切图
     const onKeyDown = e => {
       if (selectedIndex !== null) {
         if (e.key === 'ArrowLeft') {
@@ -43,6 +41,9 @@ const Hualang = () => {
         } else if (e.key === 'ArrowRight') {
           e.preventDefault();
           handleNext();
+        } else if (e.key === 'Escape') {
+          e.preventDefault();
+          setSelectedIndex(null);
         }
       }
     };
@@ -56,7 +57,17 @@ const Hualang = () => {
     };
   }, [selectedIndex]);
 
-  // 声明一次 isPortrait
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedIndex]);
+
   const isPortrait =
     selectedIndex !== null && images[selectedIndex]?.portrait === true;
 
@@ -110,6 +121,8 @@ const Hualang = () => {
             isPortrait ? 'items-start py-[5vh]' : 'items-center py-[10vh]'
           } z-50`}
           onClick={() => setSelectedIndex(null)}
+          role="dialog"
+          aria-modal="true"
         >
           {/* ← */}
           <button
@@ -126,10 +139,8 @@ const Hualang = () => {
             <img
               src={images[selectedIndex].src}
               alt={images[selectedIndex].title}
-              className="max-w-full max-h-[80vh] mb-4"
+              className={`mb-4 ${isPortrait ? 'max-h-[80vh] w-auto' : 'max-w-full max-h-[80vh]'}`}
             />
-            <div className="text-white text-center">
-            </div>
           </div>
 
           {/* → */}
