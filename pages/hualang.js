@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const Hualang = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
-  const [isPortrait, setIsPortrait] = useState(false);
 
   const images = [
     { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg', portrait: true },
@@ -39,7 +38,30 @@ const Hualang = () => {
     };
   }, []);
 
-  const isPortrait = selectedIndex !== null && images[selectedIndex]?.portrait === true;
+      {/* 左右键翻图 */}
+    const onKeyDown = e => {
+      if (selectedIndex !== null) {
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          handlePrev();
+        }
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          handleNext();
+        }
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      document.removeEventListener('contextmenu', enableContextMenu, true);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [selectedIndex]);
+
+      {/* 仅此处声明一次 isPortrait */}
+  const isPortrait =
+    selectedIndex !== null && images[selectedIndex]?.portrait === true;
 
   return (
     <div>
@@ -77,18 +99,66 @@ const Hualang = () => {
       </div>
 
       {/* 弹窗展示 */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {images.map((image, idx) => (
+          <div
+            key={idx}
+            className="relative overflow-hidden w-full pt-[100%] cursor-pointer"
+            onClick={() => setSelectedIndex(idx)}
+          >
+            <img
+              src={image.src}
+              alt={image.title}
+              className="absolute top-0 left-0 w-full h-full object-cover bg-black bg-opacity-90"
+            />
+            <div className="absolute bottom-0 w-full bg-black bg-opacity-70 text-white text-center p-1">
+              {image.title}
+            </div>
+          </div>
+        ))}
+      </div>
+
       {selectedIndex !== null && (
         <div
-          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center ${isPortrait ? 'items-start py-[5vh]' : 'items-center py-[10vh]'} z-50`}
+          className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center ${
+            isPortrait ? 'items-start py-[5vh]' : 'items-center py-[10vh]'
+          } z-50`}
           onClick={() => setSelectedIndex(null)}
         >
-          <button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handlePrev(); }}>&#10094;</button>
-          <div className="max-w-[90%] max-h-[90%] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
-            <img src={images[selectedIndex].src} alt={images[selectedIndex].title} className="max-w-full max-h-[80vh] mb-4" />
+          {/* ← */}
+          <button
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
+            onClick={e => {
+              e.stopPropagation();
+              handlePrev();
+            }}
+          >
+            &#10094;
+          </button>
+
+          <div
+            className="max-w-[90%] max-h-[90%] flex flex-col items-center"
+            onClick={e => e.stopPropagation()}
+          >
+            <img
+              src={images[selectedIndex].src}
+              alt={images[selectedIndex].title}
+              className="max-w-full max-h-[80vh] mb-4"
+            />
             <div className="text-white text-center">
             </div>
           </div>
-          <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onClick={(e) => { e.stopPropagation(); handleNext(); }}>&#10095;</button>
+
+          {/* → */}
+          <button
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl"
+            onClick={e => {
+              e.stopPropagation();
+              handleNext();
+            }}
+          >
+            &#10095;
+          </button>
         </div>
       )}
     </div>
