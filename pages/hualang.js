@@ -7,17 +7,23 @@ const Hualang = () => {
   const hideTimeout = useRef(null);
 
   const images = [
-    { src: '/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title: '这是一个完美的HDR图片示例', description: 'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg' },
-    { src: '/PQ_10_to_1000nits.avif', title: 'PQ 10 to 1000nits', description: '这是一张展示HDR效果的图片，它的动态范围从10到1000nits' },
-    { src: '/PQ_100_to_10000nits.avif', title: 'PQ 100 to 10000nits', description: '这是一张展示HDR效果的图片，它的动态范围从100到10000nits' },
-    { src: '/梦幻-树.jpg', title: 'SDR', description: 'SDR8bit' },
-    { src: '/梦幻-草地.jpg', title: 'SDR', description: 'SDR8bit' },
-    { src: '/雪乡禾木SDRsRGB8k.jpg', title: '雪乡禾木', description: '禾木' },
-    { src: '/秋.jpg', title: '秋天的G318', description: '前往然乌湖的路上' },
-    { src: '/禾木桥已经锐化.jpg', title: '禾木桥', description: '禾木桥' },
-    { src: '/20240825-12.jpg', title: '喀什古城', description: '2024年10月11日在喀什古城' },
-    { src: '/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title: '新藏线（暖）', description: '2024年10月11日在G219新藏线往新疆方向' },
-    { src: '/G219新藏线往新疆方向sRGBJPG10.JPG', title: '新藏线', description: '2024年10月11日在G219新藏线往新疆方向' },
+    { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg' },
+    { src:'/PQ_10_to_1000nits.avif', title:'PQ 10 to 1000nits', description:'这是一张展示HDR效果的图片，它的动态范围从10到1000nits' },
+    { src:'/PQ_100_to_10000nits.avif', title:'PQ 100 to 10000nits', description:'这是一张展示HDR效果的图片，它的动态范围从100到10000nits' },
+    { src:'/梦幻-树.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/梦幻-草地.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/雪乡禾木SDRsRGB8k.jpg', title:'雪乡禾木', description:'禾木' },
+    { src:'/_DSC0883-已锐化.jpg', title:'秋天的G318', description:'前往然乌湖的路上' },
+    { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥' },
+    { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10', description:'2024年10月在冈仁波齐' },
+    { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'新藏线', description:'2024年10月11日在G219新藏线往新疆方向' },
+    { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
+    { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
+    { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
+    { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
+    { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年10月11日在喀什古城' },
+    
   ];
 
   const handleNext = () => setSelectedIndex((selectedIndex + 1) % images.length);
