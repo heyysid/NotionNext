@@ -19,6 +19,7 @@ const Hualang = () => {
     { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
     { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
     { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
+    { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
     { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年10月11日在喀什古城' },
     
   ];
