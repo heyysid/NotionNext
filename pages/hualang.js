@@ -56,11 +56,9 @@ const Hualang = () => {
     };
   }, [selectedIndex]);
 
-  // 如果不支持可选链，这里用 && 代替
+  // 声明一次 isPortrait
   const isPortrait =
-    selectedIndex !== null &&
-    images[selectedIndex] &&
-    images[selectedIndex].portrait === true;
+    selectedIndex !== null && images[selectedIndex]?.portrait === true;
 
   return (
     <div>
