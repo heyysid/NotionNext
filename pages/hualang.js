@@ -110,7 +110,7 @@ const Hualang = () => {
       {selectedIndex !== null && (
         <div
           className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center z-50 ${
-            isPortrait ? 'items-start pt-[2vh] pb-[2vh]' : 'items-center py-[10vh]'
+            isPortrait ? 'items-start py-[2vh]' : 'items-center py-[10vh]'
           }`}
           onClick={() => setSelectedIndex(null)}
         >
