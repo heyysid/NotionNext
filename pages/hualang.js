@@ -110,7 +110,9 @@ const Hualang = () => {
       {selectedIndex !== null && (
         <div
           className={`fixed inset-0 bg-black bg-opacity-80 flex justify-center z-50 ${
-            isPortrait ? 'items-start py-[2vh]' : 'items-center py-[10vh]'
+            isPortrait 
+            ? 'items-center py-[2vh]' // 竖图：保持垂直居中，但减少上下边距
+            : 'items-center py-[10vh]' // 横图：更大的上下边距
           }`}
           onClick={() => setSelectedIndex(null)}
         >
@@ -126,10 +128,14 @@ const Hualang = () => {
             className="max-w-[90%] max-h-[90%] flex flex-col items-center"
             onClick={e => e.stopPropagation()}
           >
-            <img
-              src={images[selectedIndex].src}
-              alt={images[selectedIndex].title}
-              className="max-w-full max-h-[80vh] mb-4"
+          <img
+            src={images[selectedIndex].src}
+            alt={images[selectedIndex].title}
+            className={`max-w-full mb-4 ${
+              isPortrait 
+                ? 'max-h-[90vh]'  // 竖图允许更大的高度
+                : 'max-h-[80vh]'  // 横图稍小高度
+            }`}
             />
           </div>
 
