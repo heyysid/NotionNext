@@ -32,7 +32,9 @@ const Hualang = () => {
     setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
 
   useEffect(() => {
+    // 右键保留
     const enableContextMenu = e => e.stopPropagation();
+    // ← → 切图
     const onKeyDown = e => {
       if (selectedIndex !== null) {
         if (e.key === 'ArrowLeft') {
@@ -57,6 +59,7 @@ const Hualang = () => {
     };
   }, [selectedIndex]);
 
+  // 声明一次 isPortrait
   const isPortrait =
     selectedIndex !== null && images[selectedIndex]?.portrait === true;
 
@@ -126,7 +129,7 @@ const Hualang = () => {
             <img
               src={images[selectedIndex].src}
               alt={images[selectedIndex].title}
-              className={`${isPortrait ? 'h-[96vh] w-auto' : 'max-w-full max-h-[80vh]'} mb-4`}
+              className="max-w-full max-h-[80vh] mb-4"
             />
           </div>
 
