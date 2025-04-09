@@ -20,7 +20,7 @@ const Hualang = () => {
     { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
     
   ];
-
+  
   const handleNext = () =>
     setSelectedIndex((selectedIndex + 1) % images.length);
   const handlePrev = () =>
@@ -61,10 +61,10 @@ const Hualang = () => {
   return (
     <div>
       <h1>《画廊》</h1>
-        <p>这是我的画廊页面，展示一些作品和图片。（17/100）</p>
+        <p>这个页面展示一些成品图片，它们代表着我在摄影爱好方面目前所能做到的水准，我是一个客观冷静的人，我欢迎来自任何人的建设性评论和建设性交流，并会感谢为此而付出的时间和精力的朋友。最后更新于2025年01月09日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
         <p>
-          本页的图像大部分是HDR，请先确认您当前观看环境是否能正确预览HDR效果，您可以使用下方的web工具检查当前观看环境是否支持预览HDR。
+          本页的图像大部分是HDR，你需要先确认当前观看环境能否正确预览HDR效果，首先你可以使用下方的web工具检查你的硬件环境是否支持。然后再调试软件环境。
           <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
           ; 
           <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
@@ -72,7 +72,7 @@ const Hualang = () => {
         </p>
         
         <p style={{ margin: '20px 0' }}>
-          如果您确认您的硬件环境支持HDR，但您仍然无法正确预览本页面的HDR图像，请确认使用的Chrome浏览器版本是否为最新版，然后在Chrome的开发者实验室栏目里找到对应HDR的功能，确保HDR没有被禁用：
+          如果你确认你的硬件环境支持HDR，但你仍然无法正确预览本页面的HDR图像，请确认使用的Chrome浏览器版本是否为最新版，然后在Chrome的开发者实验室栏目里找到对应HDR的功能，确保HDR没有被禁用：
           <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
         </p>
         
@@ -146,5 +146,13 @@ const Hualang = () => {
     </div>
   );
 };
+
+//备份
+//{ src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
+//{ src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
+//{ src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit', portrait: true },  
+//{ src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
+//{ src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
+//{ src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' },
 
 export default Hualang;
