@@ -67,10 +67,10 @@ const Hualang = () => {
   return (
     <div>
       <h1>《画廊》</h1>
-        <p>这个页面展示一些成品图片，它们代表着我在摄影方面目前所能做到水准。我是一个客观冷静的人，我欢迎来自任何人的评论和建设性交流，并由衷感谢为此而付出的时间和精力的朋友。本页面最后更新于2025年01月09日</p>
+        <p>这个页面展示一些图片成品，这些成品代表着我目前在摄影方面的水准。这些照片欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此而付出的精力的朋友，我认为那是难得和幸运的。最后更新时间2025年01月09日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
         <p>
-          本页的图像大部分是HDR，你需要先确认当前观看环境能否正确预览HDR效果，首先你可以使用下方的web工具检查你的硬件环境是否支持。然后再调试软件环境。
+          本页的图像大部分是HDR，请你先确保当前观看环境能否正确预览HDR，首先，你可以使用下方的web工具检查你的硬件环境是否支持。
           <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
           ; 
           <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
