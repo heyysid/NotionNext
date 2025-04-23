@@ -12,7 +12,7 @@ import { getGlobalLayoutByTheme } from '@/themes/theme'
 import { useRouter } from 'next/router'
 import { useCallback, useMemo } from 'react'
 import { getQueryParam } from '../lib/utils'
-import { SpeedInsights } from '@vercel/speed-insights/next'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 // 各种扩展插件 这个要阻塞引入
 import BLOG from '@/blog.config'
