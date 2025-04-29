@@ -18,12 +18,12 @@ const Hualang = () => {
     { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年6月11日在G219新藏线往新疆方向' },
     { src:'/_DSC1375-sharpened.jpg', title:'嘎玛沟小朋友', description:'嘎玛沟藏民小便宜' },
     { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
-    { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
+    {/* { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
     { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit', portrait: true },  
     { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
     { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
-    { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' },
+    { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' }, */}
     
   ];
   
@@ -152,6 +152,5 @@ const Hualang = () => {
     </div>
   );
 };
-
 
 export default Hualang;
