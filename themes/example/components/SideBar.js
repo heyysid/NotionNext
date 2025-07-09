@@ -34,55 +34,55 @@ export const SideBar = (props) => {
             ) : (
             <ul className="list-reset leading-normal">
                <li key='1'>
-                 <Link href={`https://lizhongping.asia/tag/HDR`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/HDR`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
               <div className='font-light'><img src="/image2.gif" className='inline-block mr-1' alt="image2.gif icon" />HDR</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/背包徒步`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/背包徒步`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                <div className='font-light'><img src="/folder-1.gif" className='inline-block mr-1' alt="folder-1.gif icon" />背包徒步</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/python`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/python`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                   <div className='font-light'><img src="/binary.gif" className='inline-block mr-1' alt="binary.gif icon" />python</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/PT%2FBT`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/PT%2FBT`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                  <div className='font-light'><img src="/image1.gif" className='inline-block mr-1' alt="image1.gif icon" />PT/BT</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/AI`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/AI`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/ball.red.gif" className='inline-block mr-1' alt="ball.red.gif icon" />AI</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/骑行`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/骑行`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                      <div className='font-light'><img src="/quill.gif" className='inline-block mr-1' alt="quill icon" />骑行</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/户外`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/户外`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                      <div className='font-light'><img src="/1165257258.png" className='inline-block mr-1' alt="1165257258.png icon" />户外</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/业余无线电`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/业余无线电`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/world1.gif" className='inline-block mr-1' alt="world1 icon" />业余无线电</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/tag/摄影`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/摄影`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/burst.gif" className='inline-block mr-1' alt="burst.gif icon" />摄影</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/category/计划`} passHref>
+                 <Link href={`https://lizhongping.eu.org/category/计划`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/image3.gif" className='inline-block mr-1' alt="image3.gif icon" />计划</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/category/资源`} passHref>
+                 <Link href={`https://lizhongping.eu.org/category/资源`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/comp.blue.gif" className='inline-block mr-1' alt="comp.blue icon" />资源</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/category/图片`} passHref>
+                 <Link href={`https://lizhongping.eu.org/category/图片`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/portal.gif" className='inline-block mr-1' alt="portal.gif icon" />图片</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.asia/category/文章`} passHref>
+                 <Link href={`https://lizhongping.eu.org/category/文章`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/text.gif" className='inline-block mr-1' alt="text icon" />文章</div></a>
                  </Link>
