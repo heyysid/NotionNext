@@ -79,12 +79,12 @@ const Hualang = () => {
         
         <p style={{ margin: '20px 0' }}>
           如果你确认你的硬件环境支持HDR，但你仍然无法正确预览本页面的HDR图像，请确认使用的Chrome浏览器版本是否为最新版，然后在Chrome的开发者实验室栏目里找到对应HDR的功能，确保HDR没有被禁用：
-          <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.eu.org/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
         </p>
         
         <p style={{ margin: '20px 0' }}>
           如果您此前不曾接触HDR，或者想进一步了解有关HDR的信息，比如HDR与SDR的区别，请访问这个页面：
-          <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.asia/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.eu.org/article/HDR" className="hover:underline text-blue-500">HDR（高动态范围）图片制作的资料和工具快查表</a>
         </p>
       
       {/* 图片网格 */}
