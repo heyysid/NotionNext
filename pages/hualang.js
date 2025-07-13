@@ -17,7 +17,8 @@ const Hualang = () => {
     { src:'/白沙湖.jpg', title:'白沙湖', description:'白沙湖' },
     { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年6月11日在G219新藏线往新疆方向' },
     { src:'/_DSC1375-sharpened.jpg', title:'嘎玛沟小朋友', description:'嘎玛沟藏民小便宜' },
-    { src:'/鸽子sRGBJPG10.JPG', title:'2021inShenZhen', description:'2021inShenZhenuseZ5' },
+    { src:'/鸽子sRGBJPG10.JPG', title:'2021年', description:'2021inShenZhenuseZ5' },
+    
     {/* { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
     { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit', portrait: true },  
@@ -67,7 +68,8 @@ const Hualang = () => {
   return (
     <div>
       <h1>《画廊》</h1>
-        <p>这个页面展示一些“作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。这个页面最后更新时间是2025年01月09日</p>
+        <p style={{ margin: '20px 0' }}>这个页面展示一些“作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。</p>
+        <p style={{ margin: '20px 0' }}>这个页面最后更新时间是2025年01月09日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
         <p>
           本页的图像大部分是HDR，所以请确认你的当前观看环境是否能够正确预览HDR，首先你可以使用下方的web工具检查硬件环境是否能够正确预览。
