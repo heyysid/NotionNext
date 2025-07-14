@@ -16,10 +16,10 @@ const Hualang = () => {
     { src:'/冈仁波齐蓝调1.jpg', title:'冈仁波齐蓝调', description:'2024年6月在冈仁波齐', portrait: true },
     { src:'/白沙湖.jpg', title:'白沙湖', description:'白沙湖' },
     { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年6月11日在G219新藏线往新疆方向' },
-    { src:'/嘎玛沟遇见的小孩.jpg', title:'嘎玛沟的小朋友', description:'在嘎玛沟遇到的小朋友' },
     { src:'/鸽子sRGBJPG10.JPG', title:'2021年', description:'2021inShenZhenuseZ5' },
     
     {/* { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/嘎玛沟遇见的小孩.jpg', title:'嘎玛沟的小朋友', description:'在嘎玛沟遇到的小朋友' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
     { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit', portrait: true },  
     { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
