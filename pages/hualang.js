@@ -41,7 +41,7 @@ const Hualang = () => {
     { src:'/20240825-12.jpg', title:'20240825', description:'2024年8月在喀什古城' }, 
     { src:'/谢一旦.jpg', title:'xeydan', description:'2024年8月在喀什古城' }, 
     
-    {/*备份区*/}
+    {/* 此处是备份区 */}
     
   ];
   
