@@ -80,12 +80,12 @@ const Hualang = () => {
 
   return (
     <div>
+        {/* 此处新增首页按钮 */}
+        <p style={{ margin: '20px 0' }}><a href="https://lizhongping.eu.org/" target="_self" className="text-inherit hover:underline" >&lt;&lt;&lt;返回博客首页</a></p>
       <h1>《画廊》</h1>
         <p style={{ margin: '20px 0' }}>这个页面展示一些“作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。</p>
         <p style={{ margin: '20px 0' }}>这个页面最后更新时间是2025年01月09日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
-        {/* 此处新增首页按钮 */}
-        <p style={{ margin: '20px 0' }}><a href="https://lizhongping.eu.org/" target="_self" className="text-inherit hover:underline" >返回博客首页&gt;&gt;&gt;</a></p>
           
         <p>
           本页的图像大部分是HDR，所以请确认你的当前观看环境是否能够正确预览HDR，首先你可以使用下方的web工具检查硬件环境是否能够正确预览。
