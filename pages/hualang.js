@@ -32,15 +32,16 @@ const Hualang = () => {
     { src:'/乌鲁木齐婚礼新娘.jpg', title:'乌鲁木齐婚礼新娘', description:'null' },
     { src:'/乌鲁木齐维族婚礼.jpg', title:'乌鲁木齐维族婚礼', description:'null' },
     { src:'/鸽子sRGBJPG10.JPG', title:'2021年', description:'2021在ShenZhenu使用Z5拍摄' },
-    
-    {/* { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
-    { src:'/梁莹莹副本.JPG', title:'lyy副本', description:'null' },
-    { src:'/嘎玛沟遇见的小孩.jpg', title:'嘎玛沟的小朋友', description:'在嘎玛沟遇到的小朋友' },
+    { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/梁莹莹副本.JPG', title:'lyy', description:'null' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
-    { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit', portrait: true },  
-    { src:'/lyysRGBJPG10.JPG', title:'lyy家里', description:'202502inLYYhome' },
-    { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412inWuLuMuQi' },
-    { src:'/20240825-12.jpg', title:'喀什古城', description:'2024年8月在喀什古城' }, */}
+    { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
+    { src:'/lyysRGBJPG10.JPG', title:'午夜', description:'202502' },
+    { src:'/lyy4-已锐化.jpg', title:'lyy', description:'202412' },
+    { src:'/20240825-12.jpg', title:'20240825', description:'2024年8月在喀什古城' }, 
+    { src:'/谢一旦.jpg', title:'xeydan', description:'2024年8月在喀什古城' }, 
+    
+    {/*备份区*/}
     
   ];
   
