@@ -40,9 +40,15 @@ const Hualang = () => {
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'202412' },
     { src:'/谢一旦.jpg', title:'xeydan', description:'2024年8月在喀什古城' }, 
     { src:'/20240825-12.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+
+
     
-    {/* 
-    */}
+    {/* { src:'/赛里木湖垭口.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+    { src:'/广东大峡谷风车山.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+    { src:'/低配版LA罗浮山.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+    { src:'/眺看赛里木湖.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+    { src:'/秦岭.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+    { src:'/60岁的哈族牧民.jpg', title:'20240825', description:'2024年8月在喀什古城' }, */}
     
   ];
   
