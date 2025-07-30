@@ -44,7 +44,7 @@ export const SideBar = (props) => {
                  </Link>
                  <Link href={`https://lizhongping.eu.org/tag/python`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                  <div className='font-light'><img src="/binary.gif" className='inline-block mr-1' alt="binary.gif icon" />python</div></a>
+                  <div className='font-light'><img src="/binary.gif" className='inline-block mr-1' alt="binary.gif icon" />代码相关</div></a>
                  </Link>
                  <Link href={`https://lizhongping.eu.org/tag/PT%2FBT`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
@@ -74,9 +74,9 @@ export const SideBar = (props) => {
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                     <div className='font-light'><img src="/image3.gif" className='inline-block mr-1' alt="image3.gif icon" />计划</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.eu.org/category/资源`} passHref>
+                 <Link href={`https://lizhongping.eu.org/category/资料`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
-                    <div className='font-light'><img src="/comp.blue.gif" className='inline-block mr-1' alt="comp.blue icon" />资源</div></a>
+                    <div className='font-light'><img src="/comp.blue.gif" className='inline-block mr-1' alt="comp.blue icon" />资料</div></a>
                  </Link>
                  <Link href={`https://lizhongping.eu.org/category/图片`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
