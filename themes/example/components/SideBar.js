@@ -42,7 +42,7 @@ export const SideBar = (props) => {
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                <div className='font-light'><img src="/folder-1.gif" className='inline-block mr-1' alt="folder-1.gif icon" />背包徒步</div></a>
                  </Link>
-                 <Link href={`https://lizhongping.eu.org/tag/python`} passHref>
+                 <Link href={`https://lizhongping.eu.org/tag/代码相关`} passHref>
                    <a className="cursor-pointer inline-block rounded hover:bg-gray-500 hover:text-white duration-200 mr-2 py-1 px-2 text-xs whitespace-nowrap dark:hover:text-black dark:hover:bg-white dark:text-white hover:shadow-xl duration-200 bg-transparent hover:underline ">
                   <div className='font-light'><img src="/binary.gif" className='inline-block mr-1' alt="binary.gif icon" />代码相关</div></a>
                  </Link>
