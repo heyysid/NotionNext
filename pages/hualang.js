@@ -34,12 +34,15 @@ const Hualang = () => {
     { src:'/鸽子sRGBJPG10.JPG', title:'2021年', description:'2021在ShenZhenu使用Z5拍摄' },
     { src:'/谢一旦.jpg', title:'xeydan', description:'2024年8月在喀什古城' }, 
     { src:'/20240825-12.jpg', title:'20240825', description:'2024年8月在喀什古城' },
+    { src:'/阳光与树木.jpg', title:'阳光与树木', description:'null' },
+    { src:'/禾木SDRsRGB10.jpg', title:'禾木村', description:'null' },
 
 
     
     {/* { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
     { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
+    { src:'/阳光与树木锐化了的.jpg', title:'20240825', description:'null' },
     { src:'/lyysRGBJPG10.JPG', title:'午夜', description:'202502' },
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'202412' },
