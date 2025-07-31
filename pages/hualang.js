@@ -96,7 +96,7 @@ const Hualang = () => {
         {/* 此处新增首页按钮 */}
         <p style={{ margin: '20px 0' }}><a target="_self" href="https://lizhongping.eu.org/" className="text-blue-500 hover:underline" >&lt;&lt;&lt;返回博客首页</a></p>
       <h1>《画廊》</h1>
-        <p style={{ margin: '20px 0' }}>这个页面展示一些“作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的，虽然我根本没有搭建评论系统，嘻嘻😁。</p>
+        <p style={{ margin: '20px 0' }}>这个页面展示一些“作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的，虽然我还没有搭建评论系统，嘻嘻😁。</p>
         <p style={{ margin: '20px 0' }}>这个页面最后更新时间是2025年07月31日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
           
