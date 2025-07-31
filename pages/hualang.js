@@ -96,12 +96,12 @@ const Hualang = () => {
         {/* 此处新增首页按钮 */}
         <p style={{ margin: '20px 0' }}><a target="_self" href="https://lizhongping.eu.org/" className="text-blue-500 hover:underline" >&lt;&lt;&lt;返回博客首页</a></p>
       <h1>《画廊》</h1>
-        <p style={{ margin: '20px 0' }}>这个页面展示一些“作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的，虽然我还没有搭建评论系统，嘻嘻😁。</p>
+        <p style={{ margin: '20px 0' }}>这个页面展示一些“摄影作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。虽然我还没有搭建评论系统，嘻嘻😁。</p>
         <p style={{ margin: '20px 0' }}>这个页面最后更新时间是2025年07月31日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
           
         <p>
-          本页的图像大部分是HDR，所以请确认你的当前观看环境是否能够正确预览HDR，首先你可以使用下方的web工具检查硬件环境是否能够正确预览。
+          本页的图片大部分是HDR，所以请先使用下方的web工具确认你当前的观看环境是否能够正确预览这些HDR，首先是检查硬件环境是否能够正确预览的web工具。
           <a target="_blank" rel="noopener noreferrer" href="https://www.wide-gamut.com/" className="hover:underline text-blue-500">widegamut「HDR」测试工具</a>
           ; 
           <a target="_blank" rel="noopener noreferrer" href="https://alexfry.github.io/ACES_ODT_Candidates_Examples/diagnostic.html" className="hover:underline text-blue-500">SDR和HDR对比</a>
@@ -109,7 +109,7 @@ const Hualang = () => {
         </p>
         
         <p style={{ margin: '20px 0' }}>
-          如果你确认你的硬件环境支持HDR，但你仍然无法正确预览本页面的HDR图像，请确认使用的Chrome浏览器版本是否为最新版，然后在Chrome的开发者实验室栏目里找到对应HDR的功能，确保HDR没有被禁用：
+          如果你确认你的硬件环境支持HDR，但你仍然无法正确预览本页面的HDR图像，请确认使用的是Chrome浏览器并确认版本是否为最新，然后在Chrome的开发者实验室栏目里找到对应HDR的功能，确保他们没有被禁用：
           <a target="_blank" rel="noopener noreferrer" href="https://lizhongping.eu.org/article/HDR#1d7870ed2ca542c6847abb06b3675b94" className="hover:underline text-blue-500">Chrome预览HDR重要注意事项</a>
         </p>
         
