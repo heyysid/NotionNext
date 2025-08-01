@@ -36,21 +36,24 @@ const Hualang = () => {
     { src:'/20240825-12.jpg', title:'20240825', description:'2024年8月在喀什古城' },
     { src:'/阳光与树木.jpg', title:'阳光与树木', description:'null' },
     { src:'/禾木SDRsRGB10.jpg', title:'禾木村', description:'null' },
-
-    
-    {/* { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
+    { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
-    { src:'/lyy的腿sRGB10锐化.jpg', title:'SDR', description:'SDR8bit' },  
+    { src:'/腿.jpg', title:'SDR', description:'SDR8bit' },  
     { src:'/阳光与树木锐化了的.jpg', title:'20240825', description:'null' },
     { src:'/lyysRGBJPG10.JPG', title:'午夜', description:'202502' },
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'202412' },
-    { src:'/赛里木湖垭口.jpg', title:'20240825', description:'2024年8月在喀什古城' },
-    { src:'/广东大峡谷风车山.jpg', title:'20240825', description:'2024年8月在喀什古城' },
-    { src:'/低配版LA罗浮山.jpg', title:'20240825', description:'2024年8月在喀什古城' },
-    { src:'/眺看赛里木湖.jpg', title:'20240825', description:'2024年8月在喀什古城' },
-    { src:'/秦岭.jpg', title:'20240825', description:'2024年8月在喀什古城' },
-    { src:'/60岁的哈族牧民.jpg', title:'20240825', description:'2024年8月在喀什古城' }, */}
+    { src:'/雪山徒步.jpg', title:'哥们在雪山徒步', description:'202412' },
+    { src:'/男友视角.jpg', title:'男友视角', description:'202412' },
+    
+    {/* 
+    { src:'/赛里木湖垭口.jpg', title:'20240825', description:'null' },
+    { src:'/广东大峡谷风车山.jpg', title:'20240825', description:'null' },
+    { src:'/低配版LA罗浮山.jpg', title:'20240825', description:'null' },
+    { src:'/眺看赛里木湖.jpg', title:'20240825', description:'null' },
+    { src:'/秦岭.jpg', title:'20240825', description:'null' },
+    { src:'/60岁的哈族牧民.jpg', title:'20240825', description:'null' }, 
+    */}
     
   ];
   
