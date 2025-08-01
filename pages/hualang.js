@@ -33,6 +33,7 @@ const Hualang = () => {
     { src:'/牧民房究极锐化.jpg', title:'山顶的牧民房', description:'null' },
     { src:'/阳光与树木锐化了的.jpg', title:'阳光与树木', description:'null' },
     { src:'/禾木SDRsRGB10.jpg', title:'禾木村', description:'null' },
+    { src:'/马儿究极锐化.jpg', title:'马儿', description:'null' },
 
     { src:'/在珠峰东坡嘎玛沟遇见的小孩SDRsRGB10.jpg', title:'在珠峰东坡遇见的小孩', description:'null' },
     { src:'/乌鲁木齐婚礼新娘.jpg', title:'乌鲁木齐婚礼新娘', description:'null' },
@@ -47,7 +48,8 @@ const Hualang = () => {
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'null' },
     { src:'/男友视角.jpg', title:'20250303', description:'null' },
-    { src:'/马儿究极锐化.jpg', title:'马儿', description:'null' },
+    { src:'/谭家欣-已锐化.jpg', title:'2023年8月16日', description:'null' },
+    { src:'/谭家欣很漂亮.jpg', title:'2023年8月16日', description:'null' },
 
     
     {/* 
@@ -55,8 +57,9 @@ const Hualang = () => {
     { src:'/广东大峡谷风车山.jpg', title:'20240825', description:'null' },
     { src:'/低配版LA罗浮山.jpg', title:'20240825', description:'null' },
     { src:'/眺看赛里木湖.jpg', title:'20240825', description:'null' },
-    { src:'/秦岭.jpg', title:'20240825', description:'null' },
-    { src:'/60岁的哈族牧民.jpg', title:'20240825', description:'null' }, 
+    { src:'/秦岭.jpg', title:'20240825', description:'null' }, 
+    { src:'/谭家欣JK.jpg', title:'2021', description:'null' },
+    
     */}
     
   ];
