@@ -48,8 +48,8 @@ const Hualang = () => {
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'null' },
     { src:'/男友视角.jpg', title:'20250303', description:'null' },
-    { src:'/谭家欣-已锐化.jpg', title:'2023年8月16日', description:'null' },
-    { src:'/谭家欣很漂亮.jpg', title:'2023年8月16日', description:'null' },
+    { src:'/谭家欣很漂亮4比3.jpg', title:'2023年8月16日', description:'null' },
+    { src:'/谭家欣1锐化4比3.jpg', title:'2023年8月16日', description:'null' },
     { src:'/谭家SDRsRGB10.jpg', title:'清晨', description:'null' },
 
     
