@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+  import React, { useState, useEffect } from 'react';
 
 const Hualang = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -21,9 +21,9 @@ const Hualang = () => {
     { src:'/布达拉宫sRGBJPG10.JPG', title:'布达拉宫', description:'null' },
     { src:'/姊妹湖SDRsRGB10.jpg', title:'姊妹湖', description:'null' },
     { src:'/雪山徒步.jpg', title:'在雪山徒步', description:'null' },
-    { src:'/60岁哈族牧民究极锐化.jpg', title:'那天收留我的牧民大叔', description:'null' },
+    { src:'/60岁哈族牧民究极锐化.jpg', title:'牧民', description:'null' },
     { src:'/牧民房究极锐化.jpg', title:'山顶的牧民房', description:'null' },
-    { src:'/阳光与树木锐化了的.jpg', title:'阳光与树木', description:'null' },
+    { src:'/阳光与树木锐化了的.jpg', title:'阳光与树木SDR', description:'null' },
     { src:'/禾木SDRsRGB10.jpg', title:'禾木村', description:'null' },
     { src:'/G219新藏线往新疆方向（暖）sRGBJPG10.JPG', title:'G219新藏线往新疆方向', description:'2024年6月11日在G219新藏线往新疆方向' },
     { src:'/摩托车公路电影色调.jpeg', title:'摩托车公路电影色调', description:'null' },
@@ -47,8 +47,8 @@ const Hualang = () => {
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'null' },
     { src:'/男友视角.jpg', title:'20250303', description:'null' },
-    { src:'/谭家欣很漂亮4比3.jpg', title:'2023年8月16日', description:'null' },
-    { src:'/谭家欣1锐化4比3.jpg', title:'2023年8月16日', description:'null' },
+    { src:'/谭家欣很漂亮4比3.jpg', title:'20230816', description:'null' },
+    { src:'/谭家欣1锐化4比3.jpg', title:'20230816', description:'null' },
     { src:'/谭家SDRsRGB10.jpg', title:'清晨', description:'null' },
 
     
