@@ -19,7 +19,7 @@ const Hualang = () => {
     { src:'/在赛里木湖遇见的女孩.jpg', title:'在赛里木湖遇见的小孩', description:'null' },
     { src:'/树枝剪影SDRP3101.jpg', title:'树枝剪影', description:'null' },
     { src:'/布达拉宫sRGBJPG10.JPG', title:'布达拉宫', description:'null' },
-    { src:'/姊妹湖SDRsRGB10.jpg', title:'姊妹湖', description:'null' },
+    { src:'/姊妹湖高反差-强光.jpg', title:'姊妹湖', description:'null' },
     { src:'/雪山徒步.jpg', title:'在雪山徒步', description:'null' },
     { src:'/60岁哈族牧民究极锐化.jpg', title:'牧民', description:'null' },
     { src:'/牧民房究极锐化.jpg', title:'山顶的牧民房', description:'null' },
