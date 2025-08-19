@@ -4,18 +4,18 @@ const Hualang = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const images = [
-    { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg', portrait: true },
+    { src:'/20140606_102418_IMGP0297_hdr_rec2020_pq_yuv444_full_cq10.avif', title:'这是一个完美的HDR图片示例', description:'from https://people.csail.mit.edu/ericchan/hdr/avif_images/20140606_102418_IMGP0297.jpg' },
     { src:'/PQ_10_to_1000nits.avif', title:'PQ 10 to 1000nits', description:'这是一张展示HDR效果的图片，它的动态范围从10到1000nits' },
     { src:'/PQ_100_to_10000nits.avif', title:'PQ 100 to 10000nits', description:'这是一张展示HDR效果的图片，它的动态范围从100到10000nits' },
-    { src:'/梦幻-树.jpg', title:'SDR', description:'SDR8bit', portrait: true },
+    { src:'/梦幻-树.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/梦幻-草地.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/雪乡禾木SDRsRGB8k.jpg', title:'雪乡禾木', description:'禾木' },
     { src:'/_DSC0883-已锐化.jpg', title:'秋天的G318', description:'前往然乌湖的路上' },
-    { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥', portrait: true },
+    { src:'/禾木桥已经锐化.jpg', title:'禾木桥', description:'禾木桥' },
     { src:'/禾木河边.jpg', title:'禾木河', description:'null' },
-    { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10', description:'2024年6月在冈仁波齐' },
+    { src:'/冈仁波齐星野srgbsdr10-1.jpg', title:'冈仁波齐星野sRGBSDR10' },
     { src:'/在禾木失败的长曝光.jpg', title:'在禾木失败的长曝光', description:'null' },
-    { src:'/冈仁波齐蓝调1.jpg', title:'冈仁波齐蓝调', description:'2024年6月在冈仁波齐', portrait: true },
+    { src:'/冈仁波齐蓝调1.jpg', title:'冈仁波齐蓝调', description:'2024年6月在冈仁波齐' },
     { src:'/在赛里木湖遇见的女孩.jpg', title:'在赛里木湖遇见的小孩', description:'null' },
     { src:'/树枝剪影SDRP3101.jpg', title:'树枝剪影', description:'null' },
     { src:'/布达拉宫sRGBJPG10.JPG', title:'布达拉宫', description:'null' },
@@ -34,7 +34,6 @@ const Hualang = () => {
     { src:'/香港2SDRsRGB10.jpg', title:'香港', description:'null' },
     { src:'/香港SDRsRGB10.jpg', title:'香港', description:'null' },
 
-
     { src:'/在珠峰东坡嘎玛沟遇见的小孩SDRsRGB10.jpg', title:'在珠峰东坡遇见的小孩', description:'null' },
     { src:'/乌鲁木齐婚礼新娘.jpg', title:'乌鲁木齐婚礼新娘', description:'null' },
     { src:'/乌鲁木齐维族婚礼.jpg', title:'乌鲁木齐维族婚礼', description:'null' },
@@ -46,20 +45,19 @@ const Hualang = () => {
     { src:'/lyysRGBJPG10.JPG', title:'20250202', description:'202502' },
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'null' },
-    { src:'/男友视角.jpg', title:'20250303', description:'null' },
     { src:'/谭家欣很漂亮4比3.jpg', title:'20230816', description:'null' },
     { src:'/谭家欣1锐化4比3.jpg', title:'20230816', description:'null' },
     { src:'/谭家SDRsRGB10.jpg', title:'清晨', description:'null' },
-
     
-    {/* 
+    {/*
+    
+    { src:'/男友视角.jpg', title:'20250303', description:'null' },
     { src:'/赛里木湖垭口.jpg', title:'20240825', description:'null' },
     { src:'/广东大峡谷风车山.jpg', title:'20240825', description:'null' },
     { src:'/低配版LA罗浮山.jpg', title:'20240825', description:'null' },
     { src:'/眺看赛里木湖.jpg', title:'20240825', description:'null' },
     { src:'/秦岭.jpg', title:'20240825', description:'null' }, 
     { src:'/谭家欣JK.jpg', title:'2021', description:'null' },
-    
     */}
     
   ];
@@ -103,7 +101,7 @@ const Hualang = () => {
 
   return (
     <div>
-        {/* 此处新增首页按钮 */}
+        {/* 此处新增返回首页链接 */}
         <p style={{ margin: '20px 0' }}><a target="_self" href="https://lizhongping.eu.org/" className="text-blue-500 hover:underline" >&lt;&lt;&lt;返回博客首页</a></p>
       <h1>《画廊》</h1>
         <p style={{ margin: '20px 0' }}>这个页面展示一些“摄影作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。虽然我还没有搭建评论系统，嘻嘻😁。</p>
