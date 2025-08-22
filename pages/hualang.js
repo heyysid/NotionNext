@@ -41,16 +41,15 @@ const Hualang = () => {
     { src:'/谢一旦.jpg', title:'xeydan', description:'2024年8月在喀什古城' }, 
     { src:'/lyy的手sRGB10SDR.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyy的手P3HDR.avif', title:'HDR', description:'HDR10bit' },
-    { src:'/腿.jpg', title:'SDR', description:'SDR8bit' },  
+
+    {/*
+    { src:'/腿.jpg', title:'SDR', description:'SDR8bit' },
     { src:'/lyysRGBJPG10.JPG', title:'20250202', description:'202502' },
     { src:'/梁莹莹副本.jpg', title:'20250108', description:'null' },
     { src:'/lyy4-已锐化.jpg', title:'20250108', description:'null' },
     { src:'/谭家欣很漂亮4比3.jpg', title:'20230816', description:'null' },
     { src:'/谭家欣1锐化4比3.jpg', title:'20230816', description:'null' },
     { src:'/谭家SDRsRGB10.jpg', title:'清晨', description:'null' },
-    
-    {/*
-    
     { src:'/男友视角.jpg', title:'20250303', description:'null' },
     { src:'/赛里木湖垭口.jpg', title:'20240825', description:'null' },
     { src:'/广东大峡谷风车山.jpg', title:'20240825', description:'null' },
@@ -104,8 +103,8 @@ const Hualang = () => {
         {/* 此处新增返回首页链接 */}
         <p style={{ margin: '20px 0' }}><a target="_self" href="https://lizhongping.eu.org/" className="text-blue-500 hover:underline" >&lt;&lt;&lt;返回博客首页</a></p>
       <h1>《画廊》</h1>
-        <p style={{ margin: '20px 0' }}>这个页面展示一些“摄影作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。虽然我还没有搭建评论系统，嘻嘻😁。</p>
-        <p style={{ margin: '20px 0' }}>这个页面最后更新时间是2025年07月31日</p>
+        <p style={{ margin: '20px 0' }}>这个页面展示一些“摄影作品”，这些作品欢迎来自任何人的评论、批评和建设性交流，并且我由衷地感谢愿意为此付出精力的朋友，我认为那是难得和幸运的。</p>
+        <p style={{ margin: '20px 0' }}>这个页面的最后更新时间是2025年07月31日</p>
         <p style={{ margin: '20px 0' }}>浏览指引&gt;&gt;&gt;</p>
           
         <p>
