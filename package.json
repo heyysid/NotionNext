@@ -1,4 +1,7 @@
 {
+  "engines": {
+      "node": ">=22.x"
+    },
   "name": "notion-next",
   "version": "4.4.3",
   "homepage": "https://github.com/tangly1024/NotionNext.git",
