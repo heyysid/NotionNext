@@ -7,6 +7,7 @@ import { RecentComments } from '@waline/client'
  * @see https://waline.js.org/guide/get-started.html
  * @param {*} props
  * @returns
+ 最近评论板块
  */
 const ExampleRecentComments = (props) => {
   const [comments, updateComments] = useState([])
